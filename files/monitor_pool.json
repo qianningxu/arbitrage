@@ -1,0 +1,3748 @@
+[
+  {
+    "bybit_symbol": "ETHUSDT",
+    "base_token": {
+      "symbol": "ETH",
+      "jupiter_mints": [
+        {
+          "mint": "7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs",
+          "name": "Ether (Portal)",
+          "decimals": 8
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "MANAUSDT",
+    "base_token": {
+      "symbol": "MANA",
+      "jupiter_mints": [
+        {
+          "mint": "Bw5K8eZaf361uDLHgX2UUn1PNfC7XtgQVvY9sSappump",
+          "name": "Meme Anarchic Numismatic Asset",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "DYDXUSDT",
+    "base_token": {
+      "symbol": "DYDX",
+      "jupiter_mints": [
+        {
+          "mint": "4Hx6Bj56eGyw8EJrrheM6LBQAvVYRikYCWsALeTrwyRU",
+          "name": "dYdX (Portal)",
+          "decimals": 8
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "UNIUSDT",
+    "base_token": {
+      "symbol": "UNI",
+      "jupiter_mints": [
+        {
+          "mint": "8FU95xFJhUUkyyCLU13HSzDLs7oC4QZdXQHL6SCeab36",
+          "name": "Uniswap (Portal)",
+          "decimals": 8
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "ADAUSDT",
+    "base_token": {
+      "symbol": "ADA",
+      "jupiter_mints": [
+        {
+          "mint": "E4Q5pLaEiejwEQHcM9GeYSQfMyGy8DJ4bPWgeYthn24v",
+          "name": "Ada",
+          "decimals": 9
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "USDCUSDT",
+    "base_token": {
+      "symbol": "USDC",
+      "jupiter_mints": [
+        {
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "name": "USD Coin",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "SOLUSDT",
+    "base_token": {
+      "symbol": "SOL",
+      "jupiter_mints": [
+        {
+          "mint": "So11111111111111111111111111111111111111112",
+          "name": "Wrapped SOL",
+          "decimals": 9
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "BATUSDT",
+    "base_token": {
+      "symbol": "BAT",
+      "jupiter_mints": [
+        {
+          "mint": "EPeUFDgHRxs9xxEPVaL6kfGQvCon7jmAWKVUHuux1Tpz",
+          "name": "Basic Attention Token (Portal)",
+          "decimals": 8
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "SPELLUSDT",
+    "base_token": {
+      "symbol": "SPELL",
+      "jupiter_mints": [
+        {
+          "mint": "8zrgK9eADL7fc5GSn8seJ4n9E22bn5a4o5JiAptVpump",
+          "name": "The Spellcaster",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "SHIBUSDT",
+    "base_token": {
+      "symbol": "SHIB",
+      "jupiter_mints": [
+        {
+          "mint": "F6qoefQq4iCBLoNZ34RjEqHjHkD8vtmoRSdw9Nd55J1k",
+          "name": "shibwifhat",
+          "decimals": 9
+        },
+        {
+          "mint": "CiKu4eHsVrc1eueVQeHn7qhXTcVu95gSQmBpX4utjL9z",
+          "name": "Shiba Inu (Portal)",
+          "decimals": 8
+        },
+        {
+          "mint": "5MBBsoCVddAuF8XixvCcXNbHAw6WfpZ8WyTKMmczxxRN",
+          "name": "SHIBA INU",
+          "decimals": 9
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "AVAXUSDT",
+    "base_token": {
+      "symbol": "AVAX",
+      "jupiter_mints": [
+        {
+          "mint": "KgV1GvrHQmRBY8sHQQeUKwTm2r2h8t4C8qt12Cw1HVE",
+          "name": "AVAX (Portal)",
+          "decimals": 8
+        },
+        {
+          "mint": "AUrMpCDYYcPuHhyNX8gEEqbmDPFUpBpHrNW3vPeCFn5Z",
+          "name": "AVAX (Allbridge from Avalanche)",
+          "decimals": 9
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "C98USDT",
+    "base_token": {
+      "symbol": "C98",
+      "jupiter_mints": [
+        {
+          "mint": "C98A4nkJXhpVZNAZdHUA95RpTF3T4whtQubL3YobiUX9",
+          "name": "Coin98",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "AVAUSDT",
+    "base_token": {
+      "symbol": "AVA",
+      "jupiter_mints": [
+        {
+          "mint": "DKu9kykSfbN5LBfFXtNNDPaX35o4Fv6vJ9FKk7pZpump",
+          "name": "Ava AI",
+          "decimals": 6
+        },
+        {
+          "mint": "H1vAwYTZkL2Bq8tpS5DhC4pPJjhMLviH2ScGjuePpump",
+          "name": "AVA Chiang Mai Night Safari",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "UMAUSDT",
+    "base_token": {
+      "symbol": "UMA",
+      "jupiter_mints": [
+        {
+          "mint": "8S9DimnjUoLhPrGTr6WBp6GQ5BskwuhoHp3wKKXRbonk",
+          "name": "Uma Musume",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "ETHUSDC",
+    "base_token": {
+      "symbol": "ETH",
+      "jupiter_mints": [
+        {
+          "mint": "7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs",
+          "name": "Ether (Portal)",
+          "decimals": 8
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDC",
+      "jupiter_mints": [
+        {
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "name": "USD Coin",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "ZENUSDT",
+    "base_token": {
+      "symbol": "ZEN",
+      "jupiter_mints": [
+        {
+          "mint": "3pH7FnM3yR2Jy2c6vyXmsCiNi1rjQ7gerCq2pEUHpump",
+          "name": "Zenith",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "RUNEUSDT",
+    "base_token": {
+      "symbol": "RUNE",
+      "jupiter_mints": [
+        {
+          "mint": "DqKt6UXhFfGufvEwsMCPSfyp8e9NDFkNbGNto4o6jups",
+          "name": "Rune",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "SOLUSDC",
+    "base_token": {
+      "symbol": "SOL",
+      "jupiter_mints": [
+        {
+          "mint": "So11111111111111111111111111111111111111112",
+          "name": "Wrapped SOL",
+          "decimals": 9
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDC",
+      "jupiter_mints": [
+        {
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "name": "USD Coin",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "HNTUSDT",
+    "base_token": {
+      "symbol": "HNT",
+      "jupiter_mints": [
+        {
+          "mint": "hntyVP6YFm1Hg25TN9WGLqM12b8TQmcknKrdu1oxWux",
+          "name": "Helium Network Token",
+          "decimals": 8
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "FLOWUSDT",
+    "base_token": {
+      "symbol": "FLOW",
+      "jupiter_mints": [
+        {
+          "mint": "HEHT1eKNsTnuMAQaSM4ac8r3ynckmquxA3hUun5Npump",
+          "name": "Flow Agent",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "DAIUSDT",
+    "base_token": {
+      "symbol": "DAI",
+      "jupiter_mints": [
+        {
+          "mint": "EjmyN6qEC1Tf1JxiG1ae7UTJhUxSwk1TCWNWqxWV4J6o",
+          "name": "DAI (Portal)",
+          "decimals": 8
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "MANAUSDC",
+    "base_token": {
+      "symbol": "MANA",
+      "jupiter_mints": [
+        {
+          "mint": "Bw5K8eZaf361uDLHgX2UUn1PNfC7XtgQVvY9sSappump",
+          "name": "Meme Anarchic Numismatic Asset",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDC",
+      "jupiter_mints": [
+        {
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "name": "USD Coin",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "TRXUSDT",
+    "base_token": {
+      "symbol": "TRX",
+      "jupiter_mints": [
+        {
+          "mint": "GbbesPbaYh5uiAZSYNXTc7w9jty1rpg3P9L4JeN4LkKc",
+          "name": "TRON",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "BNBUSDT",
+    "base_token": {
+      "symbol": "BNB",
+      "jupiter_mints": [
+        {
+          "mint": "9gP2kCy3wA1ctvYWQk75guqXuHfrEomqydHLtcTCqiLa",
+          "name": "Binance Coin (Portal)",
+          "decimals": 8
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "NEARUSDT",
+    "base_token": {
+      "symbol": "NEAR",
+      "jupiter_mints": [
+        {
+          "mint": "BYPsjxa3YuZESQz1dKuBw1QSFCSpecsm8nCQhY5xbU1Z",
+          "name": "NEAR (Allbridge from Near)",
+          "decimals": 9
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "SDUSDT",
+    "base_token": {
+      "symbol": "SD",
+      "jupiter_mints": [
+        {
+          "mint": "4qnVjPG8DxoYYJifS83iExe3GWnM4JK4b6mBZRaR4gs9",
+          "name": "Stader",
+          "decimals": 8
+        },
+        {
+          "mint": "8rEEAvq6kujW2ukjYHfutH5eToAwsK4aaJ8p1ApoMs9g",
+          "name": "Shark Dog",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "APEUSDT",
+    "base_token": {
+      "symbol": "APE",
+      "jupiter_mints": [
+        {
+          "mint": "C1MHyoTJpRTeS9AQCyspNVu2EWAYCZwmJ1jNkEArFP1f",
+          "name": "ApeCoin",
+          "decimals": 9
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "FIDAUSDT",
+    "base_token": {
+      "symbol": "FIDA",
+      "jupiter_mints": [
+        {
+          "mint": "EchesyfXePKdLtoiZSL8pBe8Myagyy8ZRqsACNCFGnvp",
+          "name": "Bonfida",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "SCUSDT",
+    "base_token": {
+      "symbol": "SC",
+      "jupiter_mints": [
+        {
+          "mint": "6D7NaB2xsLd7cauWu1wKk6KBsJohJmP2qZH9GEfVi5Ui",
+          "name": "Shark Cat",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "ETHDAI",
+    "base_token": {
+      "symbol": "ETH",
+      "jupiter_mints": [
+        {
+          "mint": "7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs",
+          "name": "Ether (Portal)",
+          "decimals": 8
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "DAI",
+      "jupiter_mints": [
+        {
+          "mint": "EjmyN6qEC1Tf1JxiG1ae7UTJhUxSwk1TCWNWqxWV4J6o",
+          "name": "DAI (Portal)",
+          "decimals": 8
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "WBTCUSDT",
+    "base_token": {
+      "symbol": "WBTC",
+      "jupiter_mints": [
+        {
+          "mint": "3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh",
+          "name": "Wrapped BTC (Portal)",
+          "decimals": 8
+        },
+        {
+          "mint": "5XZw2LKTyrfvfiskJ78AMpackRjPcyCif1WhUsPDuVqQ",
+          "name": "Wrapped BTC",
+          "decimals": 8
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "GMTUSDT",
+    "base_token": {
+      "symbol": "GMT",
+      "jupiter_mints": [
+        {
+          "mint": "7i5KKsX2weiTkry7jA4ZwSuXGhs5eJBEjY8vVxR4pfRx",
+          "name": "GMT",
+          "decimals": 9
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "LUNAUSDT",
+    "base_token": {
+      "symbol": "LUNA",
+      "jupiter_mints": [
+        {
+          "mint": "9se6kma7LeGcQWyRBNcYzyxZPE3r9t9qWZ8SnjnN3jJ7",
+          "name": "Luna by Virtuals (Wormhole)",
+          "decimals": 8
+        },
+        {
+          "mint": "F6v4wfAdJB8D8p77bMXZgYt8TDKsYxLYxH5AFhUkYx9W",
+          "name": "LUNA (Portal)",
+          "decimals": 6
+        },
+        {
+          "mint": "1unatWhTyNHUBES9FCjZ5m2jmopTTs8RMk7bzzdvnZ8",
+          "name": "LunaSOL",
+          "decimals": 9
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "AVAXUSDC",
+    "base_token": {
+      "symbol": "AVAX",
+      "jupiter_mints": [
+        {
+          "mint": "KgV1GvrHQmRBY8sHQQeUKwTm2r2h8t4C8qt12Cw1HVE",
+          "name": "AVAX (Portal)",
+          "decimals": 8
+        },
+        {
+          "mint": "AUrMpCDYYcPuHhyNX8gEEqbmDPFUpBpHrNW3vPeCFn5Z",
+          "name": "AVAX (Allbridge from Avalanche)",
+          "decimals": 9
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDC",
+      "jupiter_mints": [
+        {
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "name": "USD Coin",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "ADAUSDC",
+    "base_token": {
+      "symbol": "ADA",
+      "jupiter_mints": [
+        {
+          "mint": "E4Q5pLaEiejwEQHcM9GeYSQfMyGy8DJ4bPWgeYthn24v",
+          "name": "Ada",
+          "decimals": 9
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDC",
+      "jupiter_mints": [
+        {
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "name": "USD Coin",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "TRXUSDC",
+    "base_token": {
+      "symbol": "TRX",
+      "jupiter_mints": [
+        {
+          "mint": "GbbesPbaYh5uiAZSYNXTc7w9jty1rpg3P9L4JeN4LkKc",
+          "name": "TRON",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDC",
+      "jupiter_mints": [
+        {
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "name": "USD Coin",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "GMTUSDC",
+    "base_token": {
+      "symbol": "GMT",
+      "jupiter_mints": [
+        {
+          "mint": "7i5KKsX2weiTkry7jA4ZwSuXGhs5eJBEjY8vVxR4pfRx",
+          "name": "GMT",
+          "decimals": 9
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDC",
+      "jupiter_mints": [
+        {
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "name": "USD Coin",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "SHIBUSDC",
+    "base_token": {
+      "symbol": "SHIB",
+      "jupiter_mints": [
+        {
+          "mint": "F6qoefQq4iCBLoNZ34RjEqHjHkD8vtmoRSdw9Nd55J1k",
+          "name": "shibwifhat",
+          "decimals": 9
+        },
+        {
+          "mint": "CiKu4eHsVrc1eueVQeHn7qhXTcVu95gSQmBpX4utjL9z",
+          "name": "Shiba Inu (Portal)",
+          "decimals": 8
+        },
+        {
+          "mint": "5MBBsoCVddAuF8XixvCcXNbHAw6WfpZ8WyTKMmczxxRN",
+          "name": "SHIBA INU",
+          "decimals": 9
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDC",
+      "jupiter_mints": [
+        {
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "name": "USD Coin",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "APEUSDC",
+    "base_token": {
+      "symbol": "APE",
+      "jupiter_mints": [
+        {
+          "mint": "C1MHyoTJpRTeS9AQCyspNVu2EWAYCZwmJ1jNkEArFP1f",
+          "name": "ApeCoin",
+          "decimals": 9
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDC",
+      "jupiter_mints": [
+        {
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "name": "USD Coin",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "MPLXUSDT",
+    "base_token": {
+      "symbol": "MPLX",
+      "jupiter_mints": [
+        {
+          "mint": "METAewgxyPbgwsseH8T16a39CQ5VyVxZi9zXiDPY18m",
+          "name": "Metaplex Token",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "MASKUSDT",
+    "base_token": {
+      "symbol": "MASK",
+      "jupiter_mints": [
+        {
+          "mint": "6MQpbiTC2YcogidTmKqMLK82qvE9z5QEm7EP3AEDpump",
+          "name": "catwifmask",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "MEEUSDT",
+    "base_token": {
+      "symbol": "MEE",
+      "jupiter_mints": [
+        {
+          "mint": "WppXGfc63fwKSNpK42xVRxxV8dRBtHKRE6YQPhMpump",
+          "name": "Me Everyday",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "ACSUSDT",
+    "base_token": {
+      "symbol": "ACS",
+      "jupiter_mints": [
+        {
+          "mint": "5MAYDfq5yxtudAhtfyuMBuHZjgAbaS9tbEyEQYAhDS5y",
+          "name": "Access Protocol",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "PRIMEUSDT",
+    "base_token": {
+      "symbol": "PRIME",
+      "jupiter_mints": [
+        {
+          "mint": "PRiME7gDoiG1vGr95a3CRMv9xHY7UGjd4JKvfSkmQu2",
+          "name": "SolanaPrime",
+          "decimals": 9
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "AGIUSDT",
+    "base_token": {
+      "symbol": "AGI",
+      "jupiter_mints": [
+        {
+          "mint": "8bUbe1ujsM1G3JEbBWVVCXa2widmuPdKUB2rGKMYFw7R",
+          "name": "AGI Token (Wormhole)",
+          "decimals": 8
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "PEPEUSDT",
+    "base_token": {
+      "symbol": "PEPE",
+      "jupiter_mints": [
+        {
+          "mint": "F9CpWoyeBJfoRB8f2pBe2ZNPbPsEE76mWZWme3StsvHK",
+          "name": "Pepe",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "USDTBRZ",
+    "base_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "BRZ",
+      "jupiter_mints": [
+        {
+          "mint": "FtgGSFADXBtroxq8VCausXRr2of47QBf5AS1NtZCu4GD",
+          "name": "BRZ",
+          "decimals": 4
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "NEONUSDT",
+    "base_token": {
+      "symbol": "NEON",
+      "jupiter_mints": [
+        {
+          "mint": "NeonTjSjsuo3rexg9o6vHuMXw62f9V7zvmu8M8Zut44",
+          "name": "Neon EVM",
+          "decimals": 9
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "PYUSDUSDT",
+    "base_token": {
+      "symbol": "PYUSD",
+      "jupiter_mints": [
+        {
+          "mint": "2b1kV6DkPAnxd5ixfnxCpjxmKwqjjaYmCZfHsFu24GXo",
+          "name": "PayPal USD",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "FLIPUSDT",
+    "base_token": {
+      "symbol": "FLIP",
+      "jupiter_mints": [
+        {
+          "mint": "VVWAy5U2KFd1p8AdchjUxqaJbZPBeP5vUQRZtAy8hyc",
+          "name": "flip.gg free loot box",
+          "decimals": 9
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "PYTHUSDT",
+    "base_token": {
+      "symbol": "PYTH",
+      "jupiter_mints": [
+        {
+          "mint": "HZ1JovNiVvGrGNiiYvEozEVgZ58xaU3RKwX8eACQBCt3",
+          "name": "Pyth Network",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "JTOUSDT",
+    "base_token": {
+      "symbol": "JTO",
+      "jupiter_mints": [
+        {
+          "mint": "jtojtomepa8beP8AuQc6eXt5FriJwfFMwQx2v2f9mCL",
+          "name": "JITO",
+          "decimals": 9
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "XAIUSDT",
+    "base_token": {
+      "symbol": "XAI",
+      "jupiter_mints": [
+        {
+          "mint": "PreC1KtJ1sBPPqaeeqL6Qb15GTLCYVvyYEwxhdfTwfx",
+          "name": "xAI PreStocks",
+          "decimals": 9
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "SQRUSDT",
+    "base_token": {
+      "symbol": "SQR",
+      "jupiter_mints": [
+        {
+          "mint": "CsZmZ4fz9bBjGRcu3Ram4tmLRMmKS6GPWqz4ZVxsxpNX",
+          "name": "sqrFUND",
+          "decimals": 9
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "DUELUSDT",
+    "base_token": {
+      "symbol": "DUEL",
+      "jupiter_mints": [
+        {
+          "mint": "EovfxuA6xc5Fn6Cx7r2WgJS5PgcEWWJqmPkpNFZdpump",
+          "name": "BetDuel.ai",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "SAROSUSDT",
+    "base_token": {
+      "symbol": "SAROS",
+      "jupiter_mints": [
+        {
+          "mint": "SarosY6Vscao718M4A778z4CGtvcwcGef5M9MEH1LGL",
+          "name": "Saros",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "USDYUSDT",
+    "base_token": {
+      "symbol": "USDY",
+      "jupiter_mints": [
+        {
+          "mint": "A1KLoBrKBde8Ty9qtNQUtq3C2ortoC3u7twggz7sEto6",
+          "name": "Ondo US Dollar Yield",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "JUPUSDT",
+    "base_token": {
+      "symbol": "JUP",
+      "jupiter_mints": [
+        {
+          "mint": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
+          "name": "Jupiter",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "DEFIUSDT",
+    "base_token": {
+      "symbol": "DEFI",
+      "jupiter_mints": [
+        {
+          "mint": "Fefecfi5DhahY51XqQTP2qjFGhnuoSjrVivL6k9Ercw6",
+          "name": "DegenerateFinance69Inu",
+          "decimals": 4
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "ALTUSDT",
+    "base_token": {
+      "symbol": "ALT",
+      "jupiter_mints": [
+        {
+          "mint": "Cdq1WR1d4i2hMrqKUWgZeUbRpkhamGHSvm1f6ATpuray",
+          "name": "Altcoin",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "PORTALUSDT",
+    "base_token": {
+      "symbol": "PORTAL",
+      "jupiter_mints": [
+        {
+          "mint": "FMQjDvT1GztVxdvYgMBEde4L54fftFGx9m5GmbqeJGM5",
+          "name": "Portal",
+          "decimals": 9
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "BOMEUSDT",
+    "base_token": {
+      "symbol": "BOME",
+      "jupiter_mints": [
+        {
+          "mint": "ukHH6c7mMyiWCf1b9pnWe25TSpkDDt3H5pQZgZ74J82",
+          "name": "BOOK OF MEME",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "WENUSDT",
+    "base_token": {
+      "symbol": "WEN",
+      "jupiter_mints": [
+        {
+          "mint": "WENWENvqqNya429ubCdR81ZmD69brwQaaBYY6p3LCpk",
+          "name": "Wen",
+          "decimals": 5
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "DEGENUSDT",
+    "base_token": {
+      "symbol": "DEGEN",
+      "jupiter_mints": [
+        {
+          "mint": "A7n89LqW67HJKzJkdWZa2xojuK4N5GBKHz3dfjATCZPz",
+          "name": "Degen",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "WUSDT",
+    "base_token": {
+      "symbol": "W",
+      "jupiter_mints": [
+        {
+          "mint": "85VBFQZC9TZkfaptBWjvUw7YbZjy52A6mjtPGjstQAmQ",
+          "name": "Wormhole Token",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "TNSRUSDT",
+    "base_token": {
+      "symbol": "TNSR",
+      "jupiter_mints": [
+        {
+          "mint": "TNSRxcUxoT9xBG3de7PiJyTDYu7kskLqcpddxnEJAS6",
+          "name": "Tensor",
+          "decimals": 9
+        },
+        {
+          "mint": "HHoXk7WursT9DLBBhHzBWBbuQkfvvoNyHKpJi61mpump",
+          "name": "Tensorium",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "FOXYUSDT",
+    "base_token": {
+      "symbol": "FOXY",
+      "jupiter_mints": [
+        {
+          "mint": "FoXyMu5xwXre7zEoSvzViRk3nGawHUp9kUh97y2NDhcq",
+          "name": "Famous Fox Federation",
+          "decimals": 0
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "PRCLUSDT",
+    "base_token": {
+      "symbol": "PRCL",
+      "jupiter_mints": [
+        {
+          "mint": "4LLbsb5ReP3yEtYzmXewyGjcir5uXtKFURtaEUVC2AHs",
+          "name": "Parcl",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "BRETTUSDT",
+    "base_token": {
+      "symbol": "BRETT",
+      "jupiter_mints": [
+        {
+          "mint": "DxtssVdyYe4wWE5f5zEgx2NqtDFbVL3ABGY62WCycHWg",
+          "name": "Brett",
+          "decimals": 9
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "MEWUSDT",
+    "base_token": {
+      "symbol": "MEW",
+      "jupiter_mints": [
+        {
+          "mint": "MEW1gQWJ3nEXg2qgERiKu7FAFj79PHvQVREQUzScPP5",
+          "name": "cat in a dogs world",
+          "decimals": 5
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "KMNOUSDT",
+    "base_token": {
+      "symbol": "KMNO",
+      "jupiter_mints": [
+        {
+          "mint": "KMNo3nJsBXfcpJTVhZcXLW7RmTwTt4GVFE7suUBo9sS",
+          "name": "Kamino",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "TAIUSDT",
+    "base_token": {
+      "symbol": "TAI",
+      "jupiter_mints": [
+        {
+          "mint": "Hax9LTgsQkze1YFychnBLtFH8gYbQKtKfWKKg2SP6gdD",
+          "name": "TARS AI",
+          "decimals": 9
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "PONKEUSDT",
+    "base_token": {
+      "symbol": "PONKE",
+      "jupiter_mints": [
+        {
+          "mint": "5z3EqYQo9HiCEs3R84RCDMu2n7anpDMxRhdK8PSWmrRC",
+          "name": "PONKE",
+          "decimals": 9
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "BBUSDT",
+    "base_token": {
+      "symbol": "BB",
+      "jupiter_mints": [
+        {
+          "mint": "E7MYzWD8GtLYNsgRyECSts2p1s2mu5JLb6wR9CiCBAGS",
+          "name": "Backyard Bandwidth",
+          "decimals": 9
+        },
+        {
+          "mint": "5EgzypuMLFUBDacgZqJcuL7eKtpSJuKgNu7i7Kdypump",
+          "name": "Bubble Buddy",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "NOTUSDT",
+    "base_token": {
+      "symbol": "NOT",
+      "jupiter_mints": [
+        {
+          "mint": "EhvMNj3jkMhHG8kdnv6EutZn2Fugu4M8casfivy4FfQo",
+          "name": "Not Bean",
+          "decimals": 9
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "DRIFTUSDT",
+    "base_token": {
+      "symbol": "DRIFT",
+      "jupiter_mints": [
+        {
+          "mint": "DriFtupJYLTosbwoN8koMbEYSx54aFAVLddWsbksjwg7",
+          "name": "Drift",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "IOUSDT",
+    "base_token": {
+      "symbol": "IO",
+      "jupiter_mints": [
+        {
+          "mint": "BZLbGTNCSFfoth2GYDtwr7e4imWzpR5jqcUuGEwr646K",
+          "name": "IO",
+          "decimals": 8
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "POPCATUSDT",
+    "base_token": {
+      "symbol": "POPCAT",
+      "jupiter_mints": [
+        {
+          "mint": "7GCihgDB8fe6KNjn2MYtkzZcRjQy3t9GHdC8uHYmW2hr",
+          "name": "Popcat",
+          "decimals": 9
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "ZEXUSDT",
+    "base_token": {
+      "symbol": "ZEX",
+      "jupiter_mints": [
+        {
+          "mint": "ZEXy1pqteRu3n13kdyh4LwPQknkFk3GzmMYMuNadWPo",
+          "name": "Zeta",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "CLOUDUSDT",
+    "base_token": {
+      "symbol": "CLOUD",
+      "jupiter_mints": [
+        {
+          "mint": "CLoUDKc4Ane7HeQcPpE3YHnznRxhMimJ4MyaUqyHFzAu",
+          "name": "Cloud",
+          "decimals": 9
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "L3USDT",
+    "base_token": {
+      "symbol": "L3",
+      "jupiter_mints": [
+        {
+          "mint": "5k84VjAKoGPXa7ias1BNgKUrX7e61eMPWhZDqsiD4Bpe",
+          "name": "Layer3",
+          "decimals": 9
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "RENDERUSDT",
+    "base_token": {
+      "symbol": "RENDER",
+      "jupiter_mints": [
+        {
+          "mint": "rndrizKT3MK1iimdxRdWabcF7Zg7AR5T4nud4EkHBof",
+          "name": "Render Token",
+          "decimals": 8
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "GUSDT",
+    "base_token": {
+      "symbol": "G",
+      "jupiter_mints": [
+        {
+          "mint": "AXNgt2tyXdoNR3VaXqtN8E91m9ZwKCJrVHAX6r7Dpump",
+          "name": "Andrew Tate's Dog",
+          "decimals": 6
+        },
+        {
+          "mint": "8iFREvVdmLKxVeibpC5VLRr1S6X5dm7gYR3VCU1wpump",
+          "name": "test game.com",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "PEPEUSDC",
+    "base_token": {
+      "symbol": "PEPE",
+      "jupiter_mints": [
+        {
+          "mint": "F9CpWoyeBJfoRB8f2pBe2ZNPbPsEE76mWZWme3StsvHK",
+          "name": "Pepe",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDC",
+      "jupiter_mints": [
+        {
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "name": "USD Coin",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "NOTUSDC",
+    "base_token": {
+      "symbol": "NOT",
+      "jupiter_mints": [
+        {
+          "mint": "EhvMNj3jkMhHG8kdnv6EutZn2Fugu4M8casfivy4FfQo",
+          "name": "Not Bean",
+          "decimals": 9
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDC",
+      "jupiter_mints": [
+        {
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "name": "USD Coin",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "BNBUSDC",
+    "base_token": {
+      "symbol": "BNB",
+      "jupiter_mints": [
+        {
+          "mint": "9gP2kCy3wA1ctvYWQk75guqXuHfrEomqydHLtcTCqiLa",
+          "name": "Binance Coin (Portal)",
+          "decimals": 8
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDC",
+      "jupiter_mints": [
+        {
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "name": "USD Coin",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "NEARUSDC",
+    "base_token": {
+      "symbol": "NEAR",
+      "jupiter_mints": [
+        {
+          "mint": "BYPsjxa3YuZESQz1dKuBw1QSFCSpecsm8nCQhY5xbU1Z",
+          "name": "NEAR (Allbridge from Near)",
+          "decimals": 9
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDC",
+      "jupiter_mints": [
+        {
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "name": "USD Coin",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "MEWUSDC",
+    "base_token": {
+      "symbol": "MEW",
+      "jupiter_mints": [
+        {
+          "mint": "MEW1gQWJ3nEXg2qgERiKu7FAFj79PHvQVREQUzScPP5",
+          "name": "cat in a dogs world",
+          "decimals": 5
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDC",
+      "jupiter_mints": [
+        {
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "name": "USD Coin",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "UNIUSDC",
+    "base_token": {
+      "symbol": "UNI",
+      "jupiter_mints": [
+        {
+          "mint": "8FU95xFJhUUkyyCLU13HSzDLs7oC4QZdXQHL6SCeab36",
+          "name": "Uniswap (Portal)",
+          "decimals": 8
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDC",
+      "jupiter_mints": [
+        {
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "name": "USD Coin",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "BRETTUSDC",
+    "base_token": {
+      "symbol": "BRETT",
+      "jupiter_mints": [
+        {
+          "mint": "DxtssVdyYe4wWE5f5zEgx2NqtDFbVL3ABGY62WCycHWg",
+          "name": "Brett",
+          "decimals": 9
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDC",
+      "jupiter_mints": [
+        {
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "name": "USD Coin",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "CATIUSDT",
+    "base_token": {
+      "symbol": "CATI",
+      "jupiter_mints": [
+        {
+          "mint": "6s1bPNpuZko7V1Egp2XBwwExWPcMGyuuxE4nesH2cJSS",
+          "name": "Catizen",
+          "decimals": 9
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "CATIUSDC",
+    "base_token": {
+      "symbol": "CATI",
+      "jupiter_mints": [
+        {
+          "mint": "6s1bPNpuZko7V1Egp2XBwwExWPcMGyuuxE4nesH2cJSS",
+          "name": "Catizen",
+          "decimals": 9
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDC",
+      "jupiter_mints": [
+        {
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "name": "USD Coin",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "DBRUSDT",
+    "base_token": {
+      "symbol": "DBR",
+      "jupiter_mints": [
+        {
+          "mint": "DBRiDgJAMsM95moTzJs7M9LnkGErpbv9v6CUR1DXnUu5",
+          "name": "deBridge",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "PUFFUSDT",
+    "base_token": {
+      "symbol": "PUFF",
+      "jupiter_mints": [
+        {
+          "mint": "G9tt98aYSznRk7jWsfuz9FnTdokxS6Brohdo9hSmjTRB",
+          "name": "PUFF",
+          "decimals": 9
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "XUSDT",
+    "base_token": {
+      "symbol": "X",
+      "jupiter_mints": [
+        {
+          "mint": "2PHi2f7xPq6bnh2J6xRN2Qc5TJ37epHihvBk49DgpAaU",
+          "name": "Project X",
+          "decimals": 9
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "COOKUSDT",
+    "base_token": {
+      "symbol": "COOK",
+      "jupiter_mints": [
+        {
+          "mint": "G8Vy25NzjRmuQtnN35xF7j3X2Z1TrV39XijZu8Mg4w8n",
+          "name": "Let Him Cook",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "GRASSUSDT",
+    "base_token": {
+      "symbol": "GRASS",
+      "jupiter_mints": [
+        {
+          "mint": "Grass7B4RdKfBCjTKgSqnXkqjwiGvQyFbuSCUJr3XXjs",
+          "name": "Grass",
+          "decimals": 9
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "KAIAUSDT",
+    "base_token": {
+      "symbol": "KAIA",
+      "jupiter_mints": [
+        {
+          "mint": "8Zk5n3pZotY83sZCMJ774HTyAfwpjueLHD3MrzoKpump",
+          "name": "Illusive AI",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "GOATUSDT",
+    "base_token": {
+      "symbol": "GOAT",
+      "jupiter_mints": [
+        {
+          "mint": "CzLSujWBLFsSjncfkh59rUFqvafWcY5tzedWJSuypump",
+          "name": "Goatseus Maximus",
+          "decimals": 6
+        },
+        {
+          "mint": "EELU55zVCwTzm75UdgeAXJsBKDavjSGe6KdLRLnZpump",
+          "name": "Goated",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "VIRTUALUSDT",
+    "base_token": {
+      "symbol": "VIRTUAL",
+      "jupiter_mints": [
+        {
+          "mint": "3iQL8BFS2vE7mww4ehAqQHAsbmRNCrPxizWAT2Zfyr9y",
+          "name": "Virtual Protocol",
+          "decimals": 9
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "MAJORUSDT",
+    "base_token": {
+      "symbol": "MAJOR",
+      "jupiter_mints": [
+        {
+          "mint": "CNyMaRR4krm1yAxfCvPXevNMArZZZk7sRqKwX68uCeJk",
+          "name": "Major Frog",
+          "decimals": 9
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "SPXUSDT",
+    "base_token": {
+      "symbol": "SPX",
+      "jupiter_mints": [
+        {
+          "mint": "J3NKxxXZcnNiMjKw9hYb2K4LUxgwB6t1FtPtQVsv3KFr",
+          "name": "SPX6900 (Wormhole)",
+          "decimals": 8
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "CHILLGUYUSDT",
+    "base_token": {
+      "symbol": "CHILLGUY",
+      "jupiter_mints": [
+        {
+          "mint": "Df6yfrKC8kZE3KNkrHERKzAetSxbrWeniQfyJY4Jpump",
+          "name": "Just a chill guy",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "MEUSDT",
+    "base_token": {
+      "symbol": "ME",
+      "jupiter_mints": [
+        {
+          "mint": "MEFNBXixkEbait3xn9bkm8WsJzXtVsaJEn4c8Sam21u",
+          "name": "Magic Eden",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "ZEREBROUSDT",
+    "base_token": {
+      "symbol": "ZEREBRO",
+      "jupiter_mints": [
+        {
+          "mint": "8x5VqbHA8D7NkD52uNuS5nnt3PwA8pLD34ymskeSo2Wn",
+          "name": "zerebro",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "SENDUSDT",
+    "base_token": {
+      "symbol": "SEND",
+      "jupiter_mints": [
+        {
+          "mint": "SENDdRQtYMWaQrBroBrJ2Q53fgVuq95CV9UPGEvpCxa",
+          "name": "Send",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "STREAMUSDT",
+    "base_token": {
+      "symbol": "STREAM",
+      "jupiter_mints": [
+        {
+          "mint": "STREAMribRwybYpMmSYoCsQUdr6MZNXEqHgm7p1gu9M",
+          "name": "Streamflow",
+          "decimals": 6
+        },
+        {
+          "mint": "2EYvskXTncMS11vejJcWHh8fPaCFy6bzDcVnmofEpump",
+          "name": "streamdotfun",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "PENGUUSDT",
+    "base_token": {
+      "symbol": "PENGU",
+      "jupiter_mints": [
+        {
+          "mint": "2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv",
+          "name": "Pudgy Penguins",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "FLUIDUSDT",
+    "base_token": {
+      "symbol": "FLUID",
+      "jupiter_mints": [
+        {
+          "mint": "DuEy8wWrzCUun5ZbbG9hkVqXqqicpTQw8gB7nEAzpCHQ",
+          "name": "FLUID",
+          "decimals": 9
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "ALCHUSDT",
+    "base_token": {
+      "symbol": "ALCH",
+      "jupiter_mints": [
+        {
+          "mint": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
+          "name": "Alchemist AI",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "SONICUSDT",
+    "base_token": {
+      "symbol": "SONIC",
+      "jupiter_mints": [
+        {
+          "mint": "SonicxvLud67EceaEzCLRnMTBqzYUUYNr93DBkBdDES",
+          "name": "SONIC",
+          "decimals": 9
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "GAMEUSDT",
+    "base_token": {
+      "symbol": "GAME",
+      "jupiter_mints": [
+        {
+          "mint": "BeV4PdcZsNX2WgKgwFTTEgLEnAkbD9CGgxdcVzPHpump",
+          "name": "Game is game",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "AIXBTUSDT",
+    "base_token": {
+      "symbol": "AIXBT",
+      "jupiter_mints": [
+        {
+          "mint": "14zP2ToQ79XWvc7FQpm4bRnp9d6Mp1rFfsUW3gpLcRX",
+          "name": "aixbt by Virtuals (Wormhole)",
+          "decimals": 8
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "JUSDT",
+    "base_token": {
+      "symbol": "J",
+      "jupiter_mints": [
+        {
+          "mint": "Jambjx1oJoZNBZiqbiF9TqgatEZPdyfvYa9WVsKNzUh",
+          "name": "Jambo",
+          "decimals": 9
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "SUSDT",
+    "base_token": {
+      "symbol": "S",
+      "jupiter_mints": [
+        {
+          "mint": "3rQK45d1ojXR7vtvCmeNjKKVycnVWqaVcP3zk1G39RJR",
+          "name": "Sonic",
+          "decimals": 9
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "BMTUSDT",
+    "base_token": {
+      "symbol": "BMT",
+      "jupiter_mints": [
+        {
+          "mint": "FQgtfugBdpFN7PZ6NdPrZpVLDBrPGxXesi4gVu3vErhY",
+          "name": "Bubblemaps",
+          "decimals": 9
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "TRUMPUSDT",
+    "base_token": {
+      "symbol": "TRUMP",
+      "jupiter_mints": [
+        {
+          "mint": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN",
+          "name": "OFFICIAL TRUMP",
+          "decimals": 6
+        },
+        {
+          "mint": "HaP8r3ksG76PhQLTqR8FYBeNiQpejcFbQmiHbg787Ut1",
+          "name": "MAGA (Wormhole)",
+          "decimals": 8
+        },
+        {
+          "mint": "AwRErBEFGTnohzfLeRSBH9HddQEy2oeRxnWLrbvFFh95",
+          "name": "TRUMP",
+          "decimals": 6
+        },
+        {
+          "mint": "4h8LjZWUfUQVgbEZ29UzTuGXNW6rwrJis78ZU66ekkPV",
+          "name": "Donald Trump",
+          "decimals": 9
+        },
+        {
+          "mint": "BqhNdGtS1Nqtzi2MvZ7G8NN1vRuHZ12UpHGJKe71e1JT",
+          "name": "MoonTrump",
+          "decimals": 9
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "TRUMPUSDC",
+    "base_token": {
+      "symbol": "TRUMP",
+      "jupiter_mints": [
+        {
+          "mint": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN",
+          "name": "OFFICIAL TRUMP",
+          "decimals": 6
+        },
+        {
+          "mint": "HaP8r3ksG76PhQLTqR8FYBeNiQpejcFbQmiHbg787Ut1",
+          "name": "MAGA (Wormhole)",
+          "decimals": 8
+        },
+        {
+          "mint": "AwRErBEFGTnohzfLeRSBH9HddQEy2oeRxnWLrbvFFh95",
+          "name": "TRUMP",
+          "decimals": 6
+        },
+        {
+          "mint": "4h8LjZWUfUQVgbEZ29UzTuGXNW6rwrJis78ZU66ekkPV",
+          "name": "Donald Trump",
+          "decimals": 9
+        },
+        {
+          "mint": "BqhNdGtS1Nqtzi2MvZ7G8NN1vRuHZ12UpHGJKe71e1JT",
+          "name": "MoonTrump",
+          "decimals": 9
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDC",
+      "jupiter_mints": [
+        {
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "name": "USD Coin",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "LAYERUSDT",
+    "base_token": {
+      "symbol": "LAYER",
+      "jupiter_mints": [
+        {
+          "mint": "LAYER4xPpTCb3QL8S9u41EAhAX7mhBn8Q6xMTwY2Yzc",
+          "name": "Solayer",
+          "decimals": 9
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "ROAMUSDT",
+    "base_token": {
+      "symbol": "ROAM",
+      "jupiter_mints": [
+        {
+          "mint": "RoamA1USA8xjvpTJZ6RvvxyDRzNh6GCA1zVGKSiMVkn",
+          "name": "Roam Token",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "CORNUSDT",
+    "base_token": {
+      "symbol": "CORN",
+      "jupiter_mints": [
+        {
+          "mint": "6DSqVXg9WLTWgz6LACqxN757QdHe1sCqkUfojWmxWtok",
+          "name": "Solanacorn",
+          "decimals": 7
+        },
+        {
+          "mint": "7PKN3kto5SgM52GD8dRHVSVZKArL4vQvuuSTQgnqoScH",
+          "name": "ORGANIC\u2022BITCORN",
+          "decimals": 2
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "WCTUSDT",
+    "base_token": {
+      "symbol": "WCT",
+      "jupiter_mints": [
+        {
+          "mint": "WCTk5xWdn5SYg56twGj32sUF3W4WFQ48ogezLBuYTBY",
+          "name": "WalletConnect Token",
+          "decimals": 9
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "HYPERUSDT",
+    "base_token": {
+      "symbol": "HYPER",
+      "jupiter_mints": [
+        {
+          "mint": "Aq8Gocyvyyi8xk5EYxd6viUfVmVvs9T9R6mZFzZFpump",
+          "name": "Hyperpigmentation",
+          "decimals": 6
+        },
+        {
+          "mint": "8vBMibwpn8wpfYKbQ9xqzodymg3LjmYec2tSNGRy23K8",
+          "name": "Hyperfy",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "MILKUSDT",
+    "base_token": {
+      "symbol": "MILK",
+      "jupiter_mints": [
+        {
+          "mint": "8KTatZdn1S9bDuWd6diKPpXf2ciCF3P6SDE2oqDaeBoR",
+          "name": "Sydney Sweeney",
+          "decimals": 9
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "DOODUSDT",
+    "base_token": {
+      "symbol": "DOOD",
+      "jupiter_mints": [
+        {
+          "mint": "DvjbEsdca43oQcw2h3HW1CT7N3x5vRcr3QrvTUHnXvgV",
+          "name": "Doodles",
+          "decimals": 9
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "HUMAUSDT",
+    "base_token": {
+      "symbol": "HUMA",
+      "jupiter_mints": [
+        {
+          "mint": "HUMA1821qVDKta3u2ovmfDQeW2fSQouSKE8fkF44wvGw",
+          "name": "Huma Finance",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "ASRRUSDT",
+    "base_token": {
+      "symbol": "ASRR",
+      "jupiter_mints": [
+        {
+          "mint": "ASRRjA1R4RHVk5H9QKKm1jaQqMkxvv6nh5EypPrvwmxQ",
+          "name": "Assisterr AI",
+          "decimals": 9
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "CUDISUSDT",
+    "base_token": {
+      "symbol": "CUDIS",
+      "jupiter_mints": [
+        {
+          "mint": "CudisfkgWvMKnZ3TWf6iCuHm8pN2ikXhDcWytwz6f6RN",
+          "name": "CUDIS",
+          "decimals": 9
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "HOMEUSDT",
+    "base_token": {
+      "symbol": "HOME",
+      "jupiter_mints": [
+        {
+          "mint": "J3umBWqhSjd13sag1E1aUojViWvPYA5dFNyqpKuX3WXj",
+          "name": "Home",
+          "decimals": 9
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "JUPUSDC",
+    "base_token": {
+      "symbol": "JUP",
+      "jupiter_mints": [
+        {
+          "mint": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
+          "name": "Jupiter",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDC",
+      "jupiter_mints": [
+        {
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "name": "USD Coin",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "RENDERUSDC",
+    "base_token": {
+      "symbol": "RENDER",
+      "jupiter_mints": [
+        {
+          "mint": "rndrizKT3MK1iimdxRdWabcF7Zg7AR5T4nud4EkHBof",
+          "name": "Render Token",
+          "decimals": 8
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDC",
+      "jupiter_mints": [
+        {
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "name": "USD Coin",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "FRAGUSDT",
+    "base_token": {
+      "symbol": "FRAG",
+      "jupiter_mints": [
+        {
+          "mint": "FRAGMEWj2z65qM62zqKhNtwNFskdfKs4ekDUDX3b4VD5",
+          "name": "Fragmetric",
+          "decimals": 9
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "AIXBTUSDC",
+    "base_token": {
+      "symbol": "AIXBT",
+      "jupiter_mints": [
+        {
+          "mint": "14zP2ToQ79XWvc7FQpm4bRnp9d6Mp1rFfsUW3gpLcRX",
+          "name": "aixbt by Virtuals (Wormhole)",
+          "decimals": 8
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDC",
+      "jupiter_mints": [
+        {
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "name": "USD Coin",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "SUSDC",
+    "base_token": {
+      "symbol": "S",
+      "jupiter_mints": [
+        {
+          "mint": "3rQK45d1ojXR7vtvCmeNjKKVycnVWqaVcP3zk1G39RJR",
+          "name": "Sonic",
+          "decimals": 9
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDC",
+      "jupiter_mints": [
+        {
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "name": "USD Coin",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "PYTHUSDC",
+    "base_token": {
+      "symbol": "PYTH",
+      "jupiter_mints": [
+        {
+          "mint": "HZ1JovNiVvGrGNiiYvEozEVgZ58xaU3RKwX8eACQBCt3",
+          "name": "Pyth Network",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDC",
+      "jupiter_mints": [
+        {
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "name": "USD Coin",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "USD1USDT",
+    "base_token": {
+      "symbol": "USD1",
+      "jupiter_mints": [
+        {
+          "mint": "USD1ttGY1N17NEEHLmELoaybftRBUSErhqYiQzvEmuB",
+          "name": "World Liberty Financial USD",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "HYPEUSDT",
+    "base_token": {
+      "symbol": "HYPE",
+      "jupiter_mints": [
+        {
+          "mint": "98sMhvDwXj1RQi5c5Mndm3vPe9cBqPrbLaufMXFNMh5g",
+          "name": "HYPE",
+          "decimals": 9
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "JTOUSDC",
+    "base_token": {
+      "symbol": "JTO",
+      "jupiter_mints": [
+        {
+          "mint": "jtojtomepa8beP8AuQc6eXt5FriJwfFMwQx2v2f9mCL",
+          "name": "JITO",
+          "decimals": 9
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDC",
+      "jupiter_mints": [
+        {
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "name": "USD Coin",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "DYDXUSDC",
+    "base_token": {
+      "symbol": "DYDX",
+      "jupiter_mints": [
+        {
+          "mint": "4Hx6Bj56eGyw8EJrrheM6LBQAvVYRikYCWsALeTrwyRU",
+          "name": "dYdX (Portal)",
+          "decimals": 8
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDC",
+      "jupiter_mints": [
+        {
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "name": "USD Coin",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "WUSDC",
+    "base_token": {
+      "symbol": "W",
+      "jupiter_mints": [
+        {
+          "mint": "85VBFQZC9TZkfaptBWjvUw7YbZjy52A6mjtPGjstQAmQ",
+          "name": "Wormhole Token",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDC",
+      "jupiter_mints": [
+        {
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "name": "USD Coin",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "PUMPUSDT",
+    "base_token": {
+      "symbol": "PUMP",
+      "jupiter_mints": [
+        {
+          "mint": "pumpCmXqMfrsAkQ5r49WcJnRayYRqmXz6ae8H7H9Dfn",
+          "name": "Pump",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "CATUSDT",
+    "base_token": {
+      "symbol": "CAT",
+      "jupiter_mints": [
+        {
+          "mint": "7hWcHohzwtLddDUG81H2PkWq6KEkMtSDNkYXsso18Fy3",
+          "name": "Catcoin",
+          "decimals": 3
+        },
+        {
+          "mint": "3joMReCCSESngJEpFLoKR2dNcChjSRCDtybQet5uSpse",
+          "name": "Simon's Cat",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "TUNAUSDT",
+    "base_token": {
+      "symbol": "TUNA",
+      "jupiter_mints": [
+        {
+          "mint": "TUNAfXDZEdQizTMTh3uEvNvYqJmqFHZbEJt8joP4cyx",
+          "name": "DefiTuna",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "CFGUSDT",
+    "base_token": {
+      "symbol": "CFG",
+      "jupiter_mints": [
+        {
+          "mint": "DgNsbf4wFQJNss6MKfdr5sSAb3Mn7m9HmYwemgXFjupx",
+          "name": "Crypto Fight Game",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "WLFIUSDT",
+    "base_token": {
+      "symbol": "WLFI",
+      "jupiter_mints": [
+        {
+          "mint": "WLFinEv6ypjkczcS83FZqFpgFZYwQXutRbxGe7oC16g",
+          "name": "World Liberty Financial",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "ARTUSDT",
+    "base_token": {
+      "symbol": "ART",
+      "jupiter_mints": [
+        {
+          "mint": "ARTtpGGVYbVH5LwPNgD7Kta5U4fMNAPNoJcge7iadTL6",
+          "name": "ExchangeArt",
+          "decimals": 5
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "HOLOUSDT",
+    "base_token": {
+      "symbol": "HOLO",
+      "jupiter_mints": [
+        {
+          "mint": "B8hCuoikV9gLeuwmTyhNdLbPnb5k3P77Q7WTtEM7pump",
+          "name": "Holozone",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "PORTALSUSDT",
+    "base_token": {
+      "symbol": "PORTALS",
+      "jupiter_mints": [
+        {
+          "mint": "PRTLSwfLzpVGSAQiUfXEenJkq1cwTsEcsn1hPL9zwwg",
+          "name": "Portals",
+          "decimals": 9
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "PUMPUSDC",
+    "base_token": {
+      "symbol": "PUMP",
+      "jupiter_mints": [
+        {
+          "mint": "pumpCmXqMfrsAkQ5r49WcJnRayYRqmXz6ae8H7H9Dfn",
+          "name": "Pump",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDC",
+      "jupiter_mints": [
+        {
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "name": "USD Coin",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "VIRTUALUSDC",
+    "base_token": {
+      "symbol": "VIRTUAL",
+      "jupiter_mints": [
+        {
+          "mint": "3iQL8BFS2vE7mww4ehAqQHAsbmRNCrPxizWAT2Zfyr9y",
+          "name": "Virtual Protocol",
+          "decimals": 9
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDC",
+      "jupiter_mints": [
+        {
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "name": "USD Coin",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "SPXUSDC",
+    "base_token": {
+      "symbol": "SPX",
+      "jupiter_mints": [
+        {
+          "mint": "J3NKxxXZcnNiMjKw9hYb2K4LUxgwB6t1FtPtQVsv3KFr",
+          "name": "SPX6900 (Wormhole)",
+          "decimals": 8
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDC",
+      "jupiter_mints": [
+        {
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "name": "USD Coin",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "LBTCUSDT",
+    "base_token": {
+      "symbol": "LBTC",
+      "jupiter_mints": [
+        {
+          "mint": "LBTCgU4b3wsFKsPwBn1rRZDx5DoFutM6RPiEt1TPDsY",
+          "name": "Lombard Staked BTC",
+          "decimals": 8
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "2ZUSDC",
+    "base_token": {
+      "symbol": "2Z",
+      "jupiter_mints": [
+        {
+          "mint": "J6pQQ3FAcJQeWPPGppWRb4nM8jU3wLyYbRrLh7feMfvd",
+          "name": "DoubleZero",
+          "decimals": 8
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDC",
+      "jupiter_mints": [
+        {
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "name": "USD Coin",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "2ZUSDT",
+    "base_token": {
+      "symbol": "2Z",
+      "jupiter_mints": [
+        {
+          "mint": "J6pQQ3FAcJQeWPPGppWRb4nM8jU3wLyYbRrLh7feMfvd",
+          "name": "DoubleZero",
+          "decimals": 8
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "NOMUSDT",
+    "base_token": {
+      "symbol": "NOM",
+      "jupiter_mints": [
+        {
+          "mint": "2MDr15dTn6km3NWusFcnZyhq3vWpYDg7vWprghpzbonk",
+          "name": "Trust in Nom",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "METUSDT",
+    "base_token": {
+      "symbol": "MET",
+      "jupiter_mints": [
+        {
+          "mint": "METvsvVRapdj9cFLzq4Tr43xK4tAjQfwX76z3n6mWQL",
+          "name": "Meteora",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDT",
+      "jupiter_mints": [
+        {
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "name": "USDT",
+          "decimals": 6
+        }
+      ]
+    }
+  },
+  {
+    "bybit_symbol": "METUSDC",
+    "base_token": {
+      "symbol": "MET",
+      "jupiter_mints": [
+        {
+          "mint": "METvsvVRapdj9cFLzq4Tr43xK4tAjQfwX76z3n6mWQL",
+          "name": "Meteora",
+          "decimals": 6
+        }
+      ]
+    },
+    "quote_token": {
+      "symbol": "USDC",
+      "jupiter_mints": [
+        {
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "name": "USD Coin",
+          "decimals": 6
+        }
+      ]
+    }
+  }
+]
