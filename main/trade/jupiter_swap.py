@@ -6,10 +6,11 @@ from solders.keypair import Keypair
 from solana.rpc.api import Client
 from solana.rpc.commitment import Processed
 from solana.rpc.types import TxOpts
-from trade.jupiter_helpers import get_jupiter_quote, _load_tokens, check_balance
+from jupiter_helpers import get_jupiter_quote, _load_tokens, check_balance
 
 
 def swap(quote):
+    """Low-level: Execute swap transaction with a pre-fetched quote"""
     keypair = Keypair.from_base58_string(os.getenv("SOLANA_PRIVATE_KEY"))
     
     swap_tx = requests.post("https://lite-api.jup.ag/swap/v1/swap", json={
@@ -33,7 +34,7 @@ def swap(quote):
 
 
 def trade(input_symbol, output_symbol, amount):
-    """Trade tokens by symbol"""
+    """High-level: Trade tokens by symbol (fetches quote, then calls swap)"""
     tokens = _load_tokens()
     
     input_data = tokens.get(input_symbol.upper(), [None])[0]

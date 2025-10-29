@@ -19,11 +19,11 @@ def test_get_jupiter_quote():
 
 def test_check_balance():
     """Check SOL balance"""
-    balance = check_balance("SOL")
+    balance = check_balance("USDT")
     print(f"SOL balance: {balance}")
 
 
 if __name__ == "__main__":
-    test_get_jupiter_quote()
+    # test_get_jupiter_quote()
     test_check_balance()
 

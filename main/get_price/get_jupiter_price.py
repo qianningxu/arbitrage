@@ -1,12 +1,12 @@
 import json
 import os
-from get_id_from_pairs import bybit_symbol_to_solana_mints
-from trade.jupiter_helpers import get_jupiter_quote
+from main.get_price.get_id_from_pairs import bybit_symbol_to_solana_mints
+from main.trade.jupiter_helpers import get_jupiter_quote
 
 
 def _load_tokens():
     """Load tokens from unique_mint_by_symbol.json"""
-    path = os.path.join(os.path.dirname(__file__), "../files/unique_mint_by_symbol.json")
+    path = os.path.join(os.path.dirname(__file__), "../../files/unique_mint_by_symbol.json")
     with open(path, encoding="utf-8") as f:
         return json.load(f)
 

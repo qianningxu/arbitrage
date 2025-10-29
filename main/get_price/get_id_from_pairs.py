@@ -4,7 +4,7 @@ import os
 
 def bybit_symbol_to_solana_mints(symbol):
     """Convert Bybit symbol to Solana mint addresses"""
-    base_dir = os.path.join(os.path.dirname(__file__), "../files")
+    base_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../../files")
     
     # Load all pairs
     with open(os.path.join(base_dir, "all_pairs.json"), encoding="utf-8") as f:
