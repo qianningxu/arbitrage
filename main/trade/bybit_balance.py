@@ -2,6 +2,7 @@ import os
 import sys
 import requests
 
+# Handle imports
 try:
     from main.trade.bybit_auth import sign_request
 except ModuleNotFoundError:
@@ -9,25 +10,71 @@ except ModuleNotFoundError:
     from main.trade.bybit_auth import sign_request
 
 
-def get_balance(coin):
-    """Get spot balance for a coin"""
+def get_fund_balance(coin):
+    """Get balance for a coin in FUND account"""
     coin = coin.upper()
     response = requests.get(
-        "https://api.bybit.com/v5/account/wallet-balance",
-        params={"accountType": "SPOT"},
-        headers=sign_request("accountType=SPOT")
+        "https://api.bybit.com/v5/asset/transfer/query-account-coins-balance",
+        params={"accountType": "FUND", "coin": coin},
+        headers=sign_request(f"accountType=FUND&coin={coin}")
     )
     data = response.json()
     if data.get("retCode") == 0:
-        for c in data.get("result", {}).get("list", [{}])[0].get("coin", []):
-            if c.get("coin") == coin:
-                return float(c.get("availableToWithdraw", 0))
+        balance_list = data.get("result", {}).get("balance", [])
+        if balance_list:
+            return float(balance_list[0].get("walletBalance", 0))
     return 0
 
 
-def check_balance(coin, amount):
-    """Check if balance is sufficient"""
-    balance = get_balance(coin)
-    if balance < amount:
-        raise ValueError(f"Insufficient {coin}: have {balance:.4f}, need {amount:.4f}")
+def get_unified_balance(coin):
+    """Get balance for a coin in UNIFIED account"""
+    coin = coin.upper()
+    response = requests.get(
+        "https://api.bybit.com/v5/asset/transfer/query-account-coins-balance",
+        params={"accountType": "UNIFIED", "coin": coin},
+        headers=sign_request(f"accountType=UNIFIED&coin={coin}")
+    )
+    data = response.json()
+    if data.get("retCode") == 0:
+        balance_list = data.get("result", {}).get("balance", [])
+        if balance_list:
+            return float(balance_list[0].get("walletBalance", 0))
+    return 0
 
+
+def get_all_fund_balances():
+    """Get all non-zero balances in FUND account"""
+    response = requests.get(
+        "https://api.bybit.com/v5/asset/transfer/query-account-coins-balance",
+        params={"accountType": "FUND"},
+        headers=sign_request("accountType=FUND")
+    )
+    data = response.json()
+    balances = {}
+    if data.get("retCode") == 0:
+        balance_list = data.get("result", {}).get("balance", [])
+        for item in balance_list:
+            coin = item.get("coin")
+            balance = float(item.get("walletBalance", 0))
+            if balance > 0:
+                balances[coin] = balance
+    return balances
+
+
+def get_all_unified_balances():
+    """Get all non-zero balances in UNIFIED account"""
+    response = requests.get(
+        "https://api.bybit.com/v5/asset/transfer/query-account-coins-balance",
+        params={"accountType": "UNIFIED"},
+        headers=sign_request("accountType=UNIFIED")
+    )
+    data = response.json()
+    balances = {}
+    if data.get("retCode") == 0:
+        balance_list = data.get("result", {}).get("balance", [])
+        for item in balance_list:
+            coin = item.get("coin")
+            balance = float(item.get("walletBalance", 0))
+            if balance > 0:
+                balances[coin] = balance
+    return balances

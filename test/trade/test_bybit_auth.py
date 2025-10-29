@@ -7,9 +7,12 @@ from main.trade.bybit_auth import sign_request
 
 
 def test_sign_request():
-    """Generate signed headers for API request"""
-    headers = sign_request("accountType=SPOT")
-    print(f"Generated headers with signature: {headers['X-BAPI-SIGN'][:10]}...")
+    """Test sign_request function"""
+    headers = sign_request("test_param_string")
+    print("Generated headers:")
+    print(f"  API Key: {headers.get('X-BAPI-API-KEY')[:10]}...")
+    print(f"  Signature: {headers.get('X-BAPI-SIGN')[:10]}...")
+    print(f"  Timestamp: {headers.get('X-BAPI-TIMESTAMP')}")
 
 
 if __name__ == "__main__":

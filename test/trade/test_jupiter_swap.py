@@ -25,6 +25,6 @@ def test_sol_to_usdt():
 
 
 if __name__ == "__main__":
-    # test_usdt_to_sol()
+    test_usdt_to_sol()
     test_sol_to_usdt()
 

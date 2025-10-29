@@ -7,19 +7,22 @@ import requests
 try:
     from main.get_price.get_bybit_price import get_buy_rate, get_sell_rate
     from main.trade.bybit_auth import sign_request
-    from main.trade.bybit_balance import check_balance
     from main.trade.bybit_info import get_pair_info
+    from main.trade.bybit_transfer import transfer_all_to_unified
 except ModuleNotFoundError:
     sys.path.insert(0, os.path.join(os.path.dirname(__file__), '../..'))
     from main.get_price.get_bybit_price import get_buy_rate, get_sell_rate
     from main.trade.bybit_auth import sign_request
-    from main.trade.bybit_balance import check_balance
     from main.trade.bybit_info import get_pair_info
+    from main.trade.bybit_transfer import transfer_all_to_unified
 
 
 def swap(in_coin, out_coin, amount, amount_unit):
-    """Swap coins on Bybit"""
+    """Swap coins on Bybit - automatically transfers all FUND assets to UNIFIED before trading"""
     in_coin, out_coin = in_coin.upper(), out_coin.upper()
+    
+    # Transfer all assets from FUND to UNIFIED before trading
+    transfer_all_to_unified()
     
     # Find pair
     for symbol, side in [(f"{out_coin}{in_coin}", "Buy"), (f"{in_coin}{out_coin}", "Sell")]:
@@ -49,13 +52,6 @@ def swap(in_coin, out_coin, amount, amount_unit):
     if qty < info["minQty"]:
         raise ValueError(f"Qty {qty} below min {info['minQty']}")
     
-    # Check balance
-    if side == "Buy":
-        avg_price = get_buy_rate(symbol, qty)
-        check_balance(info["quote"], qty * avg_price * 1.01)
-    else:
-        check_balance(info["base"], qty)
-    
     # Place order
     params = {"category": "spot", "symbol": symbol, "side": side, "orderType": "Market", "qty": str(qty)}
     response = requests.post(
@@ -73,13 +69,7 @@ def swap(in_coin, out_coin, amount, amount_unit):
 
 
 if __name__ == "__main__":
-    # Check balance example
-    try:
-        check_balance("USDT", 10)
-        print("✅ Have 10 USDT")
-    except ValueError as e:
-        print(f"❌ {e}")
-    
     # swap('USDT', 'SOL', 10, 'in')    # Spend 10 USDT
     # swap('USDT', 'SOL', 0.05, 'out') # Buy 0.05 SOL
     # swap('SOL', 'USDT', 0.05, 'in')  # Sell 0.05 SOL
+    pass
