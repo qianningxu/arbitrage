@@ -1,57 +1,47 @@
 import json
+import os
 
 
 def bybit_symbol_to_solana_mints(symbol):
-    raw = symbol.upper()
-
-    def load_local_mints():
-        path = "/Users/side/Desktop/arbitrage/files/all_mints.json"
-        with open(path, "r", encoding="utf-8") as f:
-            data = json.load(f)
-        if isinstance(data, dict):
-            return data
-        # Convert list to dict
-        result = {}
-        for t in data:
-            sym = (t.get("symbol") or "").upper()
-            if sym:
-                result.setdefault(sym, []).append(t)
-        return result
-
-    def get_base_quote_from_local(sym):
-        path = "/Users/side/Desktop/arbitrage/files/all_pairs.json"
-        with open(path, "r", encoding="utf-8") as f:
-            data = json.load(f)
-        for item in data:
-            if (item.get("symbol") or "").upper() == sym:
-                base = (item.get("baseCoin") or "").upper()
-                quote = (item.get("quoteCoin") or "").upper()
-                return (base, quote) if base and quote else None
-        return None
-
-    def pick_mint_for_symbol(symbol_upper, tokens_by_symbol):
-        candidates = tokens_by_symbol.get(symbol_upper, [])
-        
-        if not candidates:
-            return None
-        if len(candidates) > 1:
-            return None
-        return candidates[0].get("mint") or candidates[0].get("id")
-
-    pair = get_base_quote_from_local(raw)
+    """Convert Bybit symbol to Solana mint addresses"""
+    base_dir = os.path.join(os.path.dirname(__file__), "../files")
+    
+    # Load all pairs
+    with open(os.path.join(base_dir, "all_pairs.json"), encoding="utf-8") as f:
+        pairs = json.load(f)
+    
+    # Find pair
+    pair = None
+    for item in pairs:
+        if (item.get("symbol") or "").upper() == symbol.upper():
+            base = (item.get("baseCoin") or "").upper()
+            quote = (item.get("quoteCoin") or "").upper()
+            pair = (base, quote) if base and quote else None
+            break
+    
     if not pair:
         return None
-    base, quote = pair
-
-    tokens_by_symbol = load_local_mints()
-
-    base_mint = pick_mint_for_symbol(base, tokens_by_symbol)
-    quote_mint = pick_mint_for_symbol(quote, tokens_by_symbol)
-
-    if not base_mint or not quote_mint:
+    
+    # Load all mints
+    with open(os.path.join(base_dir, "all_mints.json"), encoding="utf-8") as f:
+        data = json.load(f)
+    
+    tokens = data if isinstance(data, dict) else {
+        (t.get("symbol") or "").upper(): [t] 
+        for t in data if t.get("symbol")
+    }
+    
+    # Get mints
+    base_candidates = tokens.get(pair[0], [])
+    quote_candidates = tokens.get(pair[1], [])
+    
+    if len(base_candidates) != 1 or len(quote_candidates) != 1:
         return None
-
-    return base_mint, quote_mint
+    
+    base_mint = base_candidates[0].get("mint") or base_candidates[0].get("id")
+    quote_mint = quote_candidates[0].get("mint") or quote_candidates[0].get("id")
+    
+    return (base_mint, quote_mint) if base_mint and quote_mint else None
 
 
 if __name__ == "__main__":

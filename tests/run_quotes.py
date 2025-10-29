@@ -6,8 +6,8 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 if ROOT not in sys.path:
     sys.path.insert(0, ROOT)
 
-from main.get_id import bybit_symbol_to_solana_mints
-from main.get_jupiter_price import get_jupiter_quote
+from main.monitor.get_id import bybit_symbol_to_solana_mints
+from main.monitor.get_jupiter_price import get_jupiter_quote
 
 
 def load_decimals_map():
@@ -57,16 +57,19 @@ def get_exchange_rate(symbol, decimals_map):
 
 def main():
     symbols = [
-        "BTCUSDT",
         "ETHUSDT",
-        "SOLUSDC",
-        "XRPUSDT",
-        "DOTUSDT",
-        "LTCUSDT",
-        "XLMUSDT",
-        "TRUMPUSDT",
-        "ETHBTC",
-        "XRPBTC",
+        "MANAUSDT",
+        "DYDXUSDT",
+        "UNIUSDT",
+        "ADAUSDT",
+        "USDCUSDT",
+        "SOLUSDT",
+        "BATUSDT",
+        "SPELLUSDT",
+        "CAKEUSDT",
+        "C98USDT",
+        "UMAUSDT",
+        "ETHUSDC"
     ]
 
     decimals_map = load_decimals_map()
