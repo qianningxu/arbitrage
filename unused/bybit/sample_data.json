@@ -1,0 +1,26 @@
+{
+    "retCode": 0,
+    "retMsg": "OK",
+    "result": {
+        "category": "spot",
+        "list": [
+            {
+                "symbol": "TRUMPUSDT",
+                "bid1Price": "7.33",
+                "bid1Size": "748.12",
+                "ask1Price": "7.34",
+                "ask1Size": "2508.8",
+                "lastPrice": "7.34",
+                "prevPrice24h": "7.03",
+                "price24hPcnt": "0.0441",
+                "highPrice24h": "7.75",
+                "lowPrice24h": "6.71",
+                "turnover24h": "28340465.87126",
+                "volume24h": "3981284.8",
+                "usdIndexPrice": "7.33418"
+            }
+        ]
+    },
+    "retExtInfo": {},
+    "time": 1761699908487
+}

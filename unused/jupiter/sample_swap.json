@@ -1,0 +1,57 @@
+{
+    "inputMint": "7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs",
+    "inAmount": "1",
+    "outputMint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+    "outAmount": "38",
+    "otherAmountThreshold": "38",
+    "swapMode": "ExactIn",
+    "slippageBps": 50,
+    "platformFee": null,
+    "priceImpactPct": "0.0452474795154587087537886791",
+    "routePlan": [
+      {
+        "swapInfo": {
+          "ammKey": "iAMtZieUtpLwB3dzWw8Fo3H3FPkMFy3ej52URusseR1",
+          "label": "HumidiFi",
+          "inputMint": "7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs",
+          "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "inAmount": "1",
+          "outAmount": "39",
+          "feeAmount": "0",
+          "feeMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+        },
+        "percent": 100,
+        "bps": 10000
+      },
+      {
+        "swapInfo": {
+          "ammKey": "7TbGqz32RsuwXbXY7EyBCiAnMbJq1gm1wKmfjQjuwoyF",
+          "label": "Raydium",
+          "inputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "outputMint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "inAmount": "39",
+          "outAmount": "38",
+          "feeAmount": "1",
+          "feeMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+        },
+        "percent": 100,
+        "bps": 10000
+      }
+    ],
+    "contextSlot": 376454932,
+    "timeTaken": 0.002163303,
+    "swapUsdValue": "0.0000379662517987760679531964",
+    "simplerRouteUsed": false,
+    "mostReliableAmmsQuoteReport": {
+      "info": {
+        "BZtgQEyS6eXUXicYPHecYQ7PybqodXQMvkjUbP4R8mUU": "37",
+        "FkEB6uvyzuoaGpgs4yRtFtxC4WJxhejNFbUkj5R6wR32": "Price is stale",
+        "HktfL7iwGKT5QHjywQkcDnZXScoh811k7akrMZJkCcEF": "Zero out amount"
+      }
+    },
+    "useIncurredSlippageForQuoting": null,
+    "otherRoutePlans": null,
+    "loadedLongtailToken": false,
+    "instructionVersion": "V1"
+  }
+  
