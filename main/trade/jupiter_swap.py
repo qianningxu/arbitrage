@@ -1,27 +1,15 @@
 import requests
 import base64
 import os
-import json
 from solders.transaction import VersionedTransaction
 from solders.keypair import Keypair
 from solana.rpc.api import Client
 from solana.rpc.commitment import Processed
 from solana.rpc.types import TxOpts
-
-
-def get_jupiter_quote(input_mint, output_mint, amount):
-    """Get quote from Jupiter"""
-    response = requests.get("https://lite-api.jup.ag/swap/v1/quote", params={
-        "inputMint": input_mint,
-        "outputMint": output_mint,
-        "amount": amount
-    })
-    data = response.json()
-    return None if "error" in data else data
+from trade.jupiter_helpers import get_jupiter_quote, _load_tokens, check_balance
 
 
 def swap(quote):
-    """Execute swap on Jupiter"""
     keypair = Keypair.from_base58_string(os.getenv("SOLANA_PRIVATE_KEY"))
     
     swap_tx = requests.post("https://lite-api.jup.ag/swap/v1/swap", json={
@@ -42,13 +30,6 @@ def swap(quote):
     tx_sig = str(result.value)
     print(f"✅ https://solscan.io/tx/{tx_sig}")
     return tx_sig
-
-
-def _load_tokens():
-    """Load tokens from unique_mint_by_symbol.json"""
-    path = os.path.join(os.path.dirname(__file__), "../files/unique_mint_by_symbol.json")
-    with open(path, encoding="utf-8") as f:
-        return json.load(f)
 
 
 def trade(input_symbol, output_symbol, amount):
@@ -76,4 +57,8 @@ def trade(input_symbol, output_symbol, amount):
 
 
 if __name__ == "__main__":
-    trade("SOL", "USDT", 0.001)
+    # Check USDT balance
+    usdt_balance = check_balance("SOL")
+    print(f"SOL Balance: {usdt_balance}")
+    
+    # trade("SOL", "USDT", 0.001)

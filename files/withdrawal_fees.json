@@ -1,0 +1,478 @@
+{
+  "2Z": {
+    "coin": "2Z",
+    "chain": "SOL",
+    "withdrawFee": "2",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "AAPLX": {
+    "coin": "AAPLX",
+    "chain": "SOL",
+    "withdrawFee": "0.005",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "ACS": {
+    "coin": "ACS",
+    "chain": "SOL",
+    "withdrawFee": "1000",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "AI16Z": {
+    "coin": "AI16Z",
+    "chain": "SOL",
+    "withdrawFee": "8",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "ALCH": {
+    "coin": "ALCH",
+    "chain": "SOL",
+    "withdrawFee": "25",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "AMZNX": {
+    "coin": "AMZNX",
+    "chain": "SOL",
+    "withdrawFee": "0.005",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "ASRR": {
+    "coin": "ASRR",
+    "chain": "SOL",
+    "withdrawFee": "10",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "BAN": {
+    "coin": "BAN",
+    "chain": "SOL",
+    "withdrawFee": "15",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "BBSOL": {
+    "coin": "BBSOL",
+    "chain": "SOL",
+    "withdrawFee": "0.003",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "BMT": {
+    "coin": "BMT",
+    "chain": "SOL",
+    "withdrawFee": "15",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "BOME": {
+    "coin": "BOME",
+    "chain": "SOL",
+    "withdrawFee": "508.360798",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "BONK": {
+    "coin": "BONK",
+    "chain": "SOL",
+    "withdrawFee": "40000",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "CHILLGUY": {
+    "coin": "CHILLGUY",
+    "chain": "SOL",
+    "withdrawFee": "30",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "CLOUD": {
+    "coin": "CLOUD",
+    "chain": "SOL",
+    "withdrawFee": "10",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "COINX": {
+    "coin": "COINX",
+    "chain": "SOL",
+    "withdrawFee": "0.002",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "CRCLX": {
+    "coin": "CRCLX",
+    "chain": "SOL",
+    "withdrawFee": "0.005",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "CUDIS": {
+    "coin": "CUDIS",
+    "chain": "SOL",
+    "withdrawFee": "10",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "DBR": {
+    "coin": "DBR",
+    "chain": "SOL",
+    "withdrawFee": "30",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "DOOD": {
+    "coin": "DOOD",
+    "chain": "SOL",
+    "withdrawFee": "300",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "DRIFT": {
+    "coin": "DRIFT",
+    "chain": "SOL",
+    "withdrawFee": "1.05",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "FIDA": {
+    "coin": "FIDA",
+    "chain": "SOL",
+    "withdrawFee": "8.964915",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "FRAG": {
+    "coin": "FRAG",
+    "chain": "SOL",
+    "withdrawFee": "50",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "GMT": {
+    "coin": "GMT",
+    "chain": "SOL",
+    "withdrawFee": "15",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "GOOGLX": {
+    "coin": "GOOGLX",
+    "chain": "SOL",
+    "withdrawFee": "0.005",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "GRASS": {
+    "coin": "GRASS",
+    "chain": "SOL",
+    "withdrawFee": "1.6",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "HNT": {
+    "coin": "HNT",
+    "chain": "SOL",
+    "withdrawFee": "0.25",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "HOME": {
+    "coin": "HOME",
+    "chain": "SOL",
+    "withdrawFee": "20",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "HOODX": {
+    "coin": "HOODX",
+    "chain": "SOL",
+    "withdrawFee": "0.01",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "HUMA": {
+    "coin": "HUMA",
+    "chain": "SOL",
+    "withdrawFee": "40",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "IO": {
+    "coin": "IO",
+    "chain": "SOL",
+    "withdrawFee": "1.5",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "J": {
+    "coin": "J",
+    "chain": "SOL",
+    "withdrawFee": "10",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "JTO": {
+    "coin": "JTO",
+    "chain": "SOL",
+    "withdrawFee": "0.5",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "JUP": {
+    "coin": "JUP",
+    "chain": "SOL",
+    "withdrawFee": "1.2",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "KMNO": {
+    "coin": "KMNO",
+    "chain": "SOL",
+    "withdrawFee": "10",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "LAYER": {
+    "coin": "LAYER",
+    "chain": "SOL",
+    "withdrawFee": "3",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "MCDX": {
+    "coin": "MCDX",
+    "chain": "SOL",
+    "withdrawFee": "0.003",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "ME": {
+    "coin": "ME",
+    "chain": "SOL",
+    "withdrawFee": "1.5",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "METAX": {
+    "coin": "METAX",
+    "chain": "SOL",
+    "withdrawFee": "0.0015",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "MEW": {
+    "coin": "MEW",
+    "chain": "SOL",
+    "withdrawFee": "288",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "MPLX": {
+    "coin": "MPLX",
+    "chain": "SOL",
+    "withdrawFee": "3",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "NEON": {
+    "coin": "NEON",
+    "chain": "SOL",
+    "withdrawFee": "7",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "NVDAX": {
+    "coin": "NVDAX",
+    "chain": "SOL",
+    "withdrawFee": "0.005",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "PENGU": {
+    "coin": "PENGU",
+    "chain": "SOL",
+    "withdrawFee": "100",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "PNUT": {
+    "coin": "PNUT",
+    "chain": "SOL",
+    "withdrawFee": "6",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "PONKE": {
+    "coin": "PONKE",
+    "chain": "SOL",
+    "withdrawFee": "7",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "POPCAT": {
+    "coin": "POPCAT",
+    "chain": "SOL",
+    "withdrawFee": "4",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "PORTALS": {
+    "coin": "PORTALS",
+    "chain": "SOL",
+    "withdrawFee": "18",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "PRCL": {
+    "coin": "PRCL",
+    "chain": "SOL",
+    "withdrawFee": "12.899736",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "PUMP": {
+    "coin": "PUMP",
+    "chain": "SOL",
+    "withdrawFee": "200",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "PYTH": {
+    "coin": "PYTH",
+    "chain": "SOL",
+    "withdrawFee": "6",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "PYUSD": {
+    "coin": "PYUSD",
+    "chain": "SOL",
+    "withdrawFee": "1",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "RENDER": {
+    "coin": "RENDER",
+    "chain": "SOL",
+    "withdrawFee": "0.2",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "ROAM": {
+    "coin": "ROAM",
+    "chain": "SOL",
+    "withdrawFee": "12.17672",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "SAROS": {
+    "coin": "SAROS",
+    "chain": "SOL",
+    "withdrawFee": "5",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "SOL": {
+    "coin": "SOL",
+    "chain": "SOL",
+    "withdrawFee": "0.008",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "TAI": {
+    "coin": "TAI",
+    "chain": "SOL",
+    "withdrawFee": "18",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "TSLAX": {
+    "coin": "TSLAX",
+    "chain": "SOL",
+    "withdrawFee": "0.003",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "TUNA": {
+    "coin": "TUNA",
+    "chain": "SOL",
+    "withdrawFee": "10",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "USD1": {
+    "coin": "USD1",
+    "chain": "SOL",
+    "withdrawFee": "1",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "0"
+  },
+  "USDC": {
+    "coin": "USDC",
+    "chain": "SOL",
+    "withdrawFee": "1",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "USDT": {
+    "coin": "USDT",
+    "chain": "SOL",
+    "withdrawFee": "1",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "0"
+  },
+  "VIRTUAL": {
+    "coin": "VIRTUAL",
+    "chain": "SOL",
+    "withdrawFee": "0.7",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "W": {
+    "coin": "W",
+    "chain": "SOL",
+    "withdrawFee": "10",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "WCT": {
+    "coin": "WCT",
+    "chain": "SOL",
+    "withdrawFee": "3",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "WEN": {
+    "coin": "WEN",
+    "chain": "SOL",
+    "withdrawFee": "19500",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "WLFI": {
+    "coin": "WLFI",
+    "chain": "SOL",
+    "withdrawFee": "5",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "0"
+  },
+  "ZEREBRO": {
+    "coin": "ZEREBRO",
+    "chain": "SOL",
+    "withdrawFee": "35",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  },
+  "ZEX": {
+    "coin": "ZEX",
+    "chain": "SOL",
+    "withdrawFee": "30",
+    "minWithdrawAmount": "N/A",
+    "withdrawStatus": "1"
+  }
+}
