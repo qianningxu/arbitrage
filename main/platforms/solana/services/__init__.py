@@ -1,4 +1,0 @@
-"""
-Solana business logic services
-"""
-

@@ -1,0 +1,17 @@
+{
+  "rules": [
+    
+    {
+      "scope": "global",
+      "instruction": "Always read the files in the README directory before writing code, and always see if there is a need to update files under the README directory directory"
+    },
+    {
+        "scope": "global",
+        "instruction": "write code in a style that is, while readable, as minimal as possible, strictly no type hitting"
+    },
+    {
+        "scope": "global",
+        "instruction": "Do not forget to update or write your tests under test/, after there is a change for any file under main/, if needed(so create, or delete a function, or change the parameter.). Keep the tests simple, it should just be a simple demon of using the functions."
+    }
+  ]
+}

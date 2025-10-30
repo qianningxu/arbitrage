@@ -10,11 +10,11 @@ Based on fee categorization:
 - s: Bid-ask spread
 - ε: Slippage/impact
 """
-from main.core.config import SOLANA_BASE_FEE_LAMPORTS
-from main.core.data_loader import get_withdrawal_fee, get_token_info
-from main.platforms.bybit.services.pricing import get_spread, get_buy_rate, get_sell_rate
-from main.platforms.solana.api.jupiter_api import get_quote, get_recent_priority_fees
-from main.platforms.solana.api.wallet import has_ata
+from main.shared.config import SOLANA_BASE_FEE_LAMPORTS
+from main.shared.data import get_withdrawal_fee, get_token_info
+from main.Bybit.pricing import get_spread, get_buy_rate, get_sell_rate
+from main.Jupiter.pricing import get_quote, get_recent_priority_fees
+from main.Jupiter.balance import has_ata
 
 
 def calculate_path_a_profit(

@@ -1,4 +1,0 @@
-"""
-Bybit business logic services
-"""
-

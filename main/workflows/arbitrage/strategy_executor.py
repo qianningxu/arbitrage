@@ -6,9 +6,9 @@ Strategy: Keep all funds on ONE exchange at a time to avoid withdrawal fees
 - If funds on Bybit → Execute Path B only (Bybit buy → withdraw to Solana)
 """
 import json
-from main.platforms.bybit.services.balance import get_all_fund_balances, get_all_unified_balances
-from main.platforms.bybit.services.transfer import transfer_to_fund
-from main.platforms.solana.services.balance import check_balance
+from main.Bybit.balance import get_all_fund_balances, get_all_unified_balances
+from main.Bybit.transfers import transfer_to_fund
+from main.Jupiter.balance import check_balance
 from .opportunity_detector import calculate_path_a_profit, calculate_path_b_profit
 
 
@@ -213,9 +213,9 @@ def execute_arbitrage(opportunity: dict, dry_run: bool = True) -> dict:
     try:
         if path == "A":
             # Path A: Jupiter buy → Transfer to Bybit → Bybit sell
-            from main.platforms.solana.services.trading import swap as jupiter_swap
-            from main.workflows.transfers.single_transfer import transfer_to_bybit
-            from main.platforms.bybit.services.trading import swap as bybit_swap
+            from main.Jupiter.trading import swap as jupiter_swap
+            from main.workflows.transfers.bridge import transfer_to_bybit
+            from main.Bybit.trading import swap as bybit_swap
             
             usdt_amount = opp["details"]["usdt_invest"]
             
@@ -240,9 +240,9 @@ def execute_arbitrage(opportunity: dict, dry_run: bool = True) -> dict:
         
         else:  # path == "B"
             # Path B: Bybit buy → Withdraw to Solana → Jupiter sell
-            from main.platforms.bybit.services.trading import swap as bybit_swap
-            from main.workflows.transfers.single_transfer import transfer_to_solana
-            from main.platforms.solana.services.trading import swap as jupiter_swap
+            from main.Bybit.trading import swap as bybit_swap
+            from main.workflows.transfers.bridge import transfer_to_solana
+            from main.Jupiter.trading import swap as jupiter_swap
             
             # First move UNIFIED → FUND for withdrawal
             print("Step 0: Move funds to FUND account...")

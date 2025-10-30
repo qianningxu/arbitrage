@@ -1,0 +1,24 @@
+"""Test bybit_balance functions"""
+import sys
+import os
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '../..'))
+
+from main.Bybit.balance import get_fund_balance, get_unified_balance
+
+
+def test_get_fund_balance(symbol):
+    """Check balance in FUND account"""
+    balance = get_fund_balance(symbol)
+    print(f"{symbol} FUND balance: {balance}")
+
+
+def test_get_unified_balance(symbol):
+    """Check balance in UNIFIED account"""
+    balance = get_unified_balance(symbol)
+    print(f"{symbol} UNIFIED balance: {balance}")
+
+
+if __name__ == "__main__":
+    test_get_fund_balance("USDT")
+    test_get_unified_balance("USDT")
+
