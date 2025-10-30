@@ -3,7 +3,7 @@ import sys
 import os
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '../..'))
 
-from main.get_price.get_jupiter_price import get_exchange_rate, get_jupiter_price_from_bybit_symbol
+from main.platforms.solana.services.pricing import get_exchange_rate, get_price_from_bybit_symbol as get_jupiter_price_from_bybit_symbol
 
 
 def test_get_exchange_rate():

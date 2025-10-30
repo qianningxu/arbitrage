@@ -3,7 +3,7 @@ import sys
 import os
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '../..'))
 
-from main.trade.bybit_transfer import transfer_all_to_unified
+from main.platforms.bybit.services.transfer import transfer_to_unified as transfer_all_to_unified
 
 
 def test_transfer_all_to_unified():

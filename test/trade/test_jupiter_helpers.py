@@ -3,7 +3,8 @@ import sys
 import os
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '../..'))
 
-from main.trade.jupiter_helpers import get_jupiter_quote, check_balance
+from main.platforms.solana.api.jupiter_api import get_quote as get_jupiter_quote
+from main.platforms.solana.services.balance import check_balance
 
 
 def test_get_jupiter_quote():

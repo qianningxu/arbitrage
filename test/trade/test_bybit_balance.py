@@ -3,7 +3,7 @@ import sys
 import os
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '../..'))
 
-from main.trade.bybit_balance import get_fund_balance, get_unified_balance, get_all_fund_balances
+from main.platforms.bybit.services.balance import get_fund_balance, get_unified_balance, get_all_fund_balances
 
 
 def test_get_fund_balance():

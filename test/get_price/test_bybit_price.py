@@ -3,7 +3,8 @@ import sys
 import os
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '../..'))
 
-from main.get_price.get_bybit_price import get_orderbook, get_sell_rate, get_buy_rate
+from main.platforms.bybit.api.market import get_orderbook
+from main.platforms.bybit.services.pricing import get_sell_rate, get_buy_rate
 
 
 def test_get_orderbook():

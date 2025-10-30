@@ -7,7 +7,7 @@ load_dotenv()
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '../..'))
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '../../main/trade'))
 
-from main.trade.jupiter_swap import trade
+from main.platforms.solana.services.trading import trade
 
 
 def test_usdt_to_sol():

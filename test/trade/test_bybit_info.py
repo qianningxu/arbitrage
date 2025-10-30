@@ -3,7 +3,7 @@ import sys
 import os
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '../..'))
 
-from main.trade.bybit_info import get_pair_info
+from main.core.data_loader import get_pair_info
 
 
 def test_get_pair_info():

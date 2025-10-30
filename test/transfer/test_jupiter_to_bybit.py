@@ -7,6 +7,7 @@ from main.transfer.jupiter_to_bybit import (
     get_bybit_deposit_address,
     transfer_to_bybit
 )
+from main.transfer.transfer_multiple_to_bybit import transfer_multiple_to_bybit
 
 
 def test_get_bybit_deposit_address():
@@ -23,7 +24,33 @@ def test_transfer_to_bybit():
     print("Test transfer_to_bybit - uncomment to run real transfer")
 
 
+def test_transfer_all_to_bybit():
+    """Transfer ALL cryptos from Jupiter to Bybit (commented - real transfer)"""
+    # Uncomment to execute real transfer:
+    # result = transfer_multiple_to_bybit(None)
+    # print(f"✅ Transferred {result['successful']}/{result['total']} cryptos")
+    # for r in result['results']:
+    #     if r['success']:
+    #         print(f"  ✅ {r['coin']}: {r['amount_transferred']}")
+    #     else:
+    #         print(f"  ❌ {r['coin']}: {r['error']}")
+    print("Test transfer_all_to_bybit - uncomment to run real transfer of ALL cryptos")
+
+
 if __name__ == "__main__":
+    print("\n" + "="*60)
+    print("JUPITER TO BYBIT TESTS")
+    print("="*60 + "\n")
+    
+    print("Test 1: Get deposit address")
     test_get_bybit_deposit_address()
+    print()
+    
+    print("Test 2: Transfer single crypto")
     test_transfer_to_bybit()
+    print()
+    
+    print("Test 3: Transfer ALL cryptos")
+    test_transfer_all_to_bybit()
+    print()
 

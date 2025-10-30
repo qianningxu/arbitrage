@@ -3,7 +3,7 @@ import sys
 import os
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '../..'))
 
-from main.get_price.get_id_from_pairs import bybit_symbol_to_solana_mints
+from main.core.converters import bybit_symbol_to_mints as bybit_symbol_to_solana_mints
 
 
 def test_bybit_symbol_to_solana_mints():
