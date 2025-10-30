@@ -3,20 +3,20 @@
 ```
 main/
 ├── Bybit/                        # Bybit exchange operations
-│   ├── auth.py                   # Authentication & signing
+│   ├── helper/
+│   │   ├── auth.py               # Authentication & signing
+│   │   └── pricing.py            # Orderbook & price calculation
 │   ├── balance.py                # Balance retrieval
-│   ├── pricing.py                # Orderbook & price calculation
-│   ├── trading.py                # Spot trading (swaps)
-│   ├── transfers.py              # Internal transfers & withdrawals
-│   └── utils.py                  # Account info helpers
+│   ├── swap.py                   # Spot trading (swaps)
+│   └── transfers.py              # Internal transfers & withdrawals
 │
 ├── Jupiter/                      # Jupiter/Solana operations
-│   ├── client.py                 # RPC client & wallet basics
+│   ├── helper/
+│   │   └── client.py             # RPC client & wallet basics
 │   ├── balance.py                # Balance checking
 │   ├── pricing.py                # Price quotes from Jupiter
-│   ├── trading.py                # Swap execution via Jupiter
-│   ├── transfers.py              # Send SOL/SPL tokens
-│   └── utils.py                  # Token info helpers
+│   ├── swap.py                   # Swap execution via Jupiter
+│   └── transfers.py              # Send SOL/SPL tokens
 │
 ├── shared/                       # Shared utilities
 │   ├── config.py                 # Environment vars & keypairs
@@ -33,21 +33,25 @@ main/
 test/
 ├── Bybit/                        # Bybit tests
 │   ├── helper/
-│   │   └── test_auth.py
+│   │   ├── test_auth.py
+│   │   ├── test_info.py
+│   │   └── test_min_order.py
 │   ├── test_balance.py
-│   ├── test_info.py
 │   ├── test_pricing.py
-│   ├── test_swap.py
 │   ├── test_transfer.py
-│   └── test_bybit_swap_scenarios.py
+│   ├── test_withdraw.py
+│   └── test_bybit_swap.py
 │
 ├── Jupiter/                      # Jupiter/Solana tests
 │   ├── helper/
-│   │   └── test_get_id_from_pairs.py
+│   │   ├── test_get_id_from_pairs.py
+│   │   ├── test_pricing.py
+│   │   └── test_quote.py
 │   ├── test_balance.py
 │   ├── test_pricing.py
 │   ├── test_quote.py
-│   └── test_swap.py
+│   ├── test_swap.py
+│   └── test_withdraw.py
 │
 └── workflow/                     # Cross-platform workflow tests
     ├── test_arbitrage_strategy.py

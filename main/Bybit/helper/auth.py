@@ -4,7 +4,7 @@ import hmac
 import hashlib
 from main.shared.config import get_bybit_credentials
 
-def sign_request(param_str: str) -> dict:
+def sign_request(param_str):
     """Create signature headers for Bybit API request"""
     api_key, api_secret = get_bybit_credentials()
     timestamp = str(int(time.time() * 1000))
@@ -19,7 +19,7 @@ def sign_request(param_str: str) -> dict:
         "Content-Type": "application/json"
     }
 
-def create_headers(params: dict = None) -> dict:
+def create_headers(params=None):
     """Create authenticated headers for Bybit API"""
     if params:
         import json

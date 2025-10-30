@@ -1,9 +1,9 @@
 """Bybit balance operations"""
 import requests
 from main.shared.config import BYBIT_API_BASE
-from .auth import sign_request
+from main.Bybit.helper.auth import sign_request
 
-def get_balance(coin: str, account_type: str) -> float:
+def get_balance(coin, account_type):
     """Get balance for a specific coin in an account"""
     coin = coin.upper()
     response = requests.get(
@@ -18,7 +18,7 @@ def get_balance(coin: str, account_type: str) -> float:
             return float(balance_list[0].get("walletBalance", 0))
     return 0
 
-def get_all_balances(account_type: str) -> dict:
+def get_all_balances(account_type):
     """Get all non-zero balances in an account"""
     response = requests.get(
         f"{BYBIT_API_BASE}/v5/asset/transfer/query-account-coins-balance",
@@ -36,23 +36,23 @@ def get_all_balances(account_type: str) -> dict:
                 balances[coin] = balance
     return balances
 
-def get_fund_balance(coin: str) -> float:
+def get_fund_balance(coin):
     """Get balance in FUND account"""
     return get_balance(coin, "FUND")
 
-def get_unified_balance(coin: str) -> float:
+def get_unified_balance(coin):
     """Get balance in UNIFIED account"""
     return get_balance(coin, "UNIFIED")
 
-def get_total_balance(coin: str) -> float:
+def get_total_balance(coin):
     """Get total balance across all accounts"""
     return get_fund_balance(coin) + get_unified_balance(coin)
 
-def get_all_fund_balances() -> dict:
+def get_all_fund_balances():
     """Get all non-zero balances in FUND account"""
     return get_all_balances("FUND")
 
-def get_all_unified_balances() -> dict:
+def get_all_unified_balances():
     """Get all non-zero balances in UNIFIED account"""
     return get_all_balances("UNIFIED")
 

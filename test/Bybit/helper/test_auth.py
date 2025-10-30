@@ -1,14 +1,14 @@
 """Test bybit_auth functions"""
 import sys
-import os
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '../../..'))
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent.parent.parent.parent))
 
-from main.platforms.bybit.api.auth import sign_request
+from main.Bybit.auth import sign_request
 
 
-def test_sign_request():
+def test_sign_request(param_string):
     """Test sign_request function"""
-    headers = sign_request("test_param_string")
+    headers = sign_request(param_string)
     print("Generated headers:")
     print(f"  API Key: {headers.get('X-BAPI-API-KEY')[:10]}...")
     print(f"  Signature: {headers.get('X-BAPI-SIGN')[:10]}...")
@@ -16,5 +16,5 @@ def test_sign_request():
 
 
 if __name__ == "__main__":
-    test_sign_request()
+    test_sign_request("test_param_string")
 

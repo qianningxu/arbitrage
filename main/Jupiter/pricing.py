@@ -4,14 +4,22 @@ from main.shared.data import get_token_info, bybit_symbol_to_mints, load_tokens
 
 def get_quote(input_mint, output_mint, amount, slippage_bps=50):
     """Get swap quote from Jupiter"""
-    response = requests.get("https://api.jup.ag/swap/v1/quote", params={
-        "inputMint": input_mint,
-        "outputMint": output_mint,
-        "amount": amount,
-        "slippageBps": slippage_bps
-    })
-    data = response.json()
-    return None if "error" in data else data
+    try:
+        response = requests.get("https://lite-api.jup.ag/swap/v1/quote", params={
+            "inputMint": input_mint,
+            "outputMint": output_mint,
+            "amount": amount,
+            "slippageBps": slippage_bps
+        }, timeout=10)
+        
+        if response.status_code != 200:
+            print(f"⚠️ Jupiter API returned status {response.status_code}")
+            return None
+        data = response.json()
+        return None if "error" in data else data
+    except requests.exceptions.RequestException as e:
+        print(f"⚠️ Jupiter API request failed: {e}")
+        return None
 
 def get_exchange_rate(input_symbol, output_symbol, amount):
     """Get exchange rate between two tokens via Jupiter"""
@@ -57,7 +65,7 @@ def get_price_from_bybit_symbol(symbol):
 
 def get_recent_priority_fees():
     """Get recent prioritization fees for adaptive fee setting"""
-    from .client import get_client
+    from .helper.client import get_client
     client = get_client()
     try:
         fees_response = client.get_recent_prioritization_fees()

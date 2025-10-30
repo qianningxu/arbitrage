@@ -5,7 +5,7 @@ from solders.transaction import VersionedTransaction
 from solana.rpc.commitment import Processed
 from solana.rpc.types import TxOpts
 from main.shared.data import get_token_info
-from .client import get_client, get_keypair
+from .helper.client import get_client, get_keypair
 from .pricing import get_quote, get_recent_priority_fees
 from .balance import check_balance
 
@@ -20,11 +20,24 @@ def execute_swap(quote, priority_fee_lamports=None):
     }
     if priority_fee_lamports is not None:
         swap_params["prioritizationFeeLamports"] = priority_fee_lamports
-    swap_tx = requests.post(
-        "https://api.jup.ag/swap/v1/swap",
-        json=swap_params,
-        timeout=15
-    ).json()
+    
+    try:
+        response = requests.post(
+            "https://lite-api.jup.ag/swap/v1/swap",
+            json=swap_params,
+            timeout=15
+        )
+        if response.status_code != 200:
+            raise ValueError(f"Jupiter swap API returned status {response.status_code}: {response.text[:200]}")
+        
+        swap_tx = response.json()
+    except requests.exceptions.RequestException as e:
+        raise ValueError(f"Jupiter swap API request failed: {e}")
+    
+    if "swapTransaction" not in swap_tx:
+        error_msg = swap_tx.get("error", swap_tx.get("errorCode", swap_tx))
+        raise ValueError(f"Jupiter swap response missing 'swapTransaction': {error_msg}")
+    
     raw_tx = base64.b64decode(swap_tx["swapTransaction"])
     transaction = VersionedTransaction.from_bytes(raw_tx)
     signed_tx = VersionedTransaction(transaction.message, [keypair])
@@ -57,10 +70,6 @@ def swap(input_symbol, output_symbol, amount, slippage_bps=50, auto_priority_fee
         if priority_fee > 0:
             print(f"⚡ Priority fee: {priority_fee} lamports")
     return execute_swap(quote, priority_fee)
-
-def trade(input_symbol, output_symbol, amount):
-    """High-level trade function (alias for swap)"""
-    return swap(input_symbol, output_symbol, amount)
 
 def crypto_to_u(crypto, slippage_bps=50, auto_priority_fee=True):
     """Swap all crypto balance to USDT"""

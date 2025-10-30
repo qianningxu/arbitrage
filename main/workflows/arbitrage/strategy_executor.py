@@ -213,9 +213,9 @@ def execute_arbitrage(opportunity: dict, dry_run: bool = True) -> dict:
     try:
         if path == "A":
             # Path A: Jupiter buy → Transfer to Bybit → Bybit sell
-            from main.Jupiter.trading import swap as jupiter_swap
+            from main.Jupiter.swap import swap as jupiter_swap
             from main.workflows.transfers.bridge import transfer_to_bybit
-            from main.Bybit.trading import swap as bybit_swap
+            from main.Bybit.swap import swap as bybit_swap
             
             usdt_amount = opp["details"]["usdt_invest"]
             
@@ -240,9 +240,9 @@ def execute_arbitrage(opportunity: dict, dry_run: bool = True) -> dict:
         
         else:  # path == "B"
             # Path B: Bybit buy → Withdraw to Solana → Jupiter sell
-            from main.Bybit.trading import swap as bybit_swap
+            from main.Bybit.swap import swap as bybit_swap
             from main.workflows.transfers.bridge import transfer_to_solana
-            from main.Jupiter.trading import swap as jupiter_swap
+            from main.Jupiter.swap import swap as jupiter_swap
             
             # First move UNIFIED → FUND for withdrawal
             print("Step 0: Move funds to FUND account...")

@@ -7,8 +7,15 @@ from .auth import sign_request
 from .pricing import get_buy_rate, get_sell_rate
 from .transfers import transfer_to_unified
 
-def place_market_order(symbol: str, side: str, qty: float) -> dict:
-    """Place a market order"""
+def place_market_order(symbol: str, side: str, qty: float, market_unit: str = None) -> dict:
+    """Place a market order
+    
+    Args:
+        symbol: Trading pair symbol (e.g., SOLUSDT)
+        side: Buy or Sell
+        qty: Order quantity
+        market_unit: 'baseCoin' (qty in base) or 'quoteCoin' (qty in quote). For market orders only.
+    """
     params = {
         "category": "spot",
         "symbol": symbol,
@@ -16,6 +23,8 @@ def place_market_order(symbol: str, side: str, qty: float) -> dict:
         "orderType": "Market",
         "qty": str(qty)
     }
+    if market_unit:
+        params["marketUnit"] = market_unit
     response = requests.post(
         f"{BYBIT_API_BASE}/v5/order/create",
         json=params,
@@ -40,10 +49,13 @@ def swap(in_coin: str, out_coin: str, amount: float, amount_unit: str = "in") ->
             symbol, side = f"{in_coin}{out_coin}", "Sell"
     if not symbol:
         raise ValueError(f"No trading pair found for {in_coin}/{out_coin}")
+    
+    market_unit = None
     if amount_unit == "in":
         if side == "Buy":
-            avg_price = get_buy_rate(symbol, 0.01)
-            qty = amount / (avg_price * 1.01)
+            # For Buy orders, specify amount in quote currency (USDT) directly
+            qty = amount
+            market_unit = "quoteCoin"
         else:
             qty = amount
     else:
@@ -52,15 +64,19 @@ def swap(in_coin: str, out_coin: str, amount: float, amount_unit: str = "in") ->
         else:
             avg_price = get_sell_rate(symbol, 0.01)
             qty = amount / avg_price
-    if info["precision"] >= 1:
-        qty = int(qty)
-    else:
-        decimals = len(str(info["precision"]).split('.')[-1])
-        qty = round(qty, decimals)
-    if qty < info["minQty"]:
-        raise ValueError(f"Quantity {qty} below minimum {info['minQty']}")
-    result = place_market_order(symbol, side, qty)
-    print(f"✅ {side} {qty} {info['base']} - Order ID: {result['orderId']}")
+    
+    # Only apply precision/minQty checks when not using quoteCoin market unit
+    if market_unit != "quoteCoin":
+        if info["precision"] >= 1:
+            qty = int(qty)
+        else:
+            decimals = len(str(info["precision"]).split('.')[-1])
+            qty = round(qty, decimals)
+        if qty < info["minQty"]:
+            raise ValueError(f"Quantity {qty} below minimum {info['minQty']}")
+    
+    result = place_market_order(symbol, side, qty, market_unit)
+    print(f"✅ {side} {qty} {'USDT' if market_unit == 'quoteCoin' else info['base']} - Order ID: {result['orderId']}")
     return result
 
 def market_buy(symbol: str, qty: float) -> dict:

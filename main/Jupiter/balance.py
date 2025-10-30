@@ -2,16 +2,16 @@
 from solders.pubkey import Pubkey
 from spl.token.instructions import get_associated_token_address
 from main.shared.data import get_token_info
-from .client import get_client, get_keypair
+from .helper.client import get_client, get_keypair
 
-def get_sol_balance() -> float:
+def get_sol_balance():
     """Get SOL balance"""
     client = get_client()
     keypair = get_keypair()
     balance_response = client.get_balance(keypair.pubkey())
     return balance_response.value / 1e9
 
-def get_token_balance(symbol: str) -> float:
+def get_token_balance(symbol):
     """Get token balance for a specific symbol"""
     if symbol.upper() == "SOL":
         return get_sol_balance()
@@ -30,11 +30,11 @@ def get_token_balance(symbol: str) -> float:
         print(f"Error getting balance for {symbol}: {e}")
         return 0.0
 
-def check_balance(symbol: str) -> float:
+def check_balance(symbol):
     """Check balance for a token symbol (alias)"""
     return get_token_balance(symbol)
 
-def has_ata(mint_address: str) -> bool:
+def has_ata(mint_address):
     """Check if wallet has Associated Token Account for a mint"""
     client = get_client()
     keypair = get_keypair()

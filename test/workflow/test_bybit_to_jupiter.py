@@ -1,9 +1,9 @@
 """Test bybit_to_jupiter - Withdrawal examples"""
 import sys
-import os
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '../..'))
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 
-from main.Jupiter.client import get_address as get_solana_wallet_address
+from main.Jupiter.helper.client import get_address as get_solana_wallet_address
 from main.workflows.transfers.bridge import transfer_to_solana as withdraw_from_bybit
 from main.workflows.arbitrage.consolidate_funds import consolidate_to_solana as transfer_all_to_jupiter
 
@@ -14,17 +14,17 @@ def test_get_solana_address():
     print(f"Solana wallet address: {address}")
 
 
-def test_simple_sol_withdrawal():
-    """Simple example: Withdraw 0.03 SOL from Bybit to Jupiter (commented - real transfer)"""
+def test_withdraw_from_bybit(coin, amount):
+    """Withdraw crypto from Bybit to Jupiter (commented - real transfer)"""
     # Uncomment to execute real withdrawal:
     # try:
-    #     result = withdraw_from_bybit("SOL", 0.03)
+    #     result = withdraw_from_bybit(coin, amount)
     #     print(f"✅ Withdrawal ID: {result['withdrawal_id']}")
     #     return result
     # except Exception as e:
     #     print(f"❌ Failed: {e}")
     #     return None
-    print("Test simple_sol_withdrawal - uncomment to run real withdrawal")
+    print(f"Test withdraw {amount} {coin} from Bybit - uncomment to run real withdrawal")
 
 
 def test_transfer_all_to_jupiter():
@@ -49,8 +49,8 @@ if __name__ == "__main__":
     test_get_solana_address()
     print()
     
-    print("Test 2: Simple SOL withdrawal")
-    test_simple_sol_withdrawal()
+    print("Test 2: Withdraw from Bybit")
+    test_withdraw_from_bybit("SOL", 0.03)
     print()
     
     print("Test 3: Transfer ALL cryptos")

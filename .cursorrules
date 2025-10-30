@@ -6,6 +6,11 @@
       "instruction": "Always read the files in the README directory before writing code, and always see if there is a need to update files under the README directory directory"
     },
     {
+      "scope": "global",
+      "instruction": "the test function should take input as well'"
+    },
+    
+    {
         "scope": "global",
         "instruction": "write code in a style that is, while readable, as minimal as possible, strictly no type hitting"
     },

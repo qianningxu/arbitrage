@@ -118,7 +118,7 @@ def consolidate_to_usdt_on_bybit():
     Useful after receiving various coins
     """
     from main.Bybit.balance import get_all_unified_balances
-    from main.Bybit.trading import swap
+    from main.Bybit.swap import swap
     
     print("\n" + "="*60)
     print("💱 CONSOLIDATING TO USDT ON BYBIT")
@@ -151,7 +151,7 @@ def consolidate_to_usdt_on_solana():
     
     This swaps all non-USDT coins to USDT on Jupiter
     """
-    from main.Jupiter.trading import swap
+    from main.Jupiter.swap import swap
     
     print("\n" + "="*60)
     print("💱 CONSOLIDATING TO USDT ON SOLANA")

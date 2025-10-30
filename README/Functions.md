@@ -22,9 +22,17 @@
 
 ## Bybit/
 
-### auth.py
+### helper/auth.py
 - **sign_request(param_str)** - Create signature headers for Bybit API
 - **create_headers(params=None)** - Create authenticated headers
+
+### helper/pricing.py
+- **get_orderbook(symbol, depth=100)** - Get orderbook from Bybit
+- **get_ticker(symbol)** - Get ticker with best bid/ask
+- **get_buy_rate(symbol, qty, depth=100)** - Calculate average buy rate from orderbook
+- **get_sell_rate(symbol, qty, depth=100)** - Calculate average sell rate from orderbook
+- **get_mid_price(symbol)** - Get mid price (average of bid/ask)
+- **get_spread(symbol)** - Get bid-ask spread information
 
 ### balance.py
 - **get_balance(coin, account_type)** - Get balance for specific coin in account
@@ -35,17 +43,9 @@
 - **get_all_fund_balances()** - Get all balances in FUND
 - **get_all_unified_balances()** - Get all balances in UNIFIED
 
-### pricing.py
-- **get_orderbook(symbol, depth=100)** - Get orderbook from Bybit
-- **get_ticker(symbol)** - Get ticker with best bid/ask
-- **get_buy_rate(symbol, qty, depth=100)** - Calculate average buy rate from orderbook
-- **get_sell_rate(symbol, qty, depth=100)** - Calculate average sell rate from orderbook
-- **get_mid_price(symbol)** - Get mid price (average of bid/ask)
-- **get_spread(symbol)** - Get bid-ask spread information
-
-### trading.py
-- **place_market_order(symbol, side, qty)** - Place market order
-- **swap(in_coin, out_coin, amount, amount_unit="in")** - Swap coins on Bybit
+### swap.py
+- **place_market_order(symbol, side, qty, market_unit=None)** - Place market order (market_unit: 'baseCoin' or 'quoteCoin')
+- **swap(in_coin, out_coin, amount, amount_unit="in")** - Swap coins on Bybit (uses quoteCoin for BUY orders)
 - **market_buy(symbol, qty)** - Place market buy order
 - **market_sell(symbol, qty)** - Place market sell order
 - **crypto_to_u(crypto)** - Transfer crypto from FUND to UNIFIED and swap to USDT
@@ -57,15 +57,13 @@
 - **transfer_to_unified(coin=None, amount=None)** - Transfer from FUND to UNIFIED
 - **get_deposit_address(coin, chain="SOL")** - Get deposit address
 - **create_withdrawal(coin, amount, address, chain="SOL")** - Create withdrawal request
-
-### utils.py
-- **get_pair_info(symbol)** - Get trading pair info
+- **withdraw(symbol, chain="SOL")** - Withdraw all funds of a symbol to Jupiter wallet (transfers from UNIFIED to FUND, deducts withdrawal fee, then withdraws)
 
 ---
 
 ## Jupiter/
 
-### client.py
+### helper/client.py
 - **get_client()** - Get Solana RPC client (cached singleton)
 - **get_keypair()** - Get Solana keypair
 - **get_address()** - Get Solana wallet address
@@ -82,19 +80,16 @@
 - **get_price_from_bybit_symbol(symbol)** - Get Jupiter price using Bybit symbol
 - **get_recent_priority_fees()** - Get recent prioritization fees
 
-### trading.py
+### swap.py
 - **execute_swap(quote, priority_fee_lamports=None)** - Execute swap with quote
 - **swap(input_symbol, output_symbol, amount, slippage_bps=50, auto_priority_fee=True)** - Swap tokens via Jupiter
-- **trade(input_symbol, output_symbol, amount)** - High-level trade function
 - **crypto_to_u(crypto, slippage_bps=50, auto_priority_fee=True)** - Swap all crypto to USDT
 - **u_to_crypto(crypto, slippage_bps=50, auto_priority_fee=True)** - Swap all USDT to crypto
 
 ### transfers.py
 - **send_sol(destination, amount)** - Send native SOL
 - **send_token(mint_address, destination, amount, decimals)** - Send SPL token
-
-### utils.py
-- **get_token_info(symbol)** - Get token info
+- **withdraw(symbol, chain="SOL")** - Withdraw all available crypto from Jupiter to Bybit
 
 ---
 

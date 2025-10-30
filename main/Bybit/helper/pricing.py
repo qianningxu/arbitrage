@@ -2,7 +2,7 @@
 import requests
 from main.shared.config import BYBIT_API_BASE
 
-def get_orderbook(symbol: str, depth: int = 100) -> dict:
+def get_orderbook(symbol, depth=100):
     """Get orderbook from Bybit"""
     response = requests.get(f"{BYBIT_API_BASE}/v5/market/orderbook", params={
         "category": "spot",
@@ -15,7 +15,7 @@ def get_orderbook(symbol: str, depth: int = 100) -> dict:
         "asks": [(float(p), float(sz)) for p, sz in result["a"]]
     }
 
-def get_ticker(symbol: str) -> dict:
+def get_ticker(symbol):
     """Get ticker (best bid/ask) from Bybit"""
     response = requests.get(f"{BYBIT_API_BASE}/v5/market/tickers", params={
         "category": "spot",
@@ -29,7 +29,7 @@ def get_ticker(symbol: str) -> dict:
         "last": float(result["lastPrice"])
     }
 
-def get_buy_rate(symbol: str, qty: float, depth: int = 100) -> float:
+def get_buy_rate(symbol, qty, depth=100):
     """Calculate average buy rate (buying from asks)"""
     asks = get_orderbook(symbol, depth)["asks"]
     asks.sort()
@@ -42,7 +42,7 @@ def get_buy_rate(symbol: str, qty: float, depth: int = 100) -> float:
         remaining -= take
     return cost / (qty - remaining) if qty != remaining else 0
 
-def get_sell_rate(symbol: str, qty: float, depth: int = 100) -> float:
+def get_sell_rate(symbol, qty, depth=100):
     """Calculate average sell rate (selling into bids)"""
     bids = get_orderbook(symbol, depth)["bids"]
     bids.sort(reverse=True)
@@ -55,12 +55,12 @@ def get_sell_rate(symbol: str, qty: float, depth: int = 100) -> float:
         remaining -= take
     return proceeds / (qty - remaining) if qty != remaining else 0
 
-def get_mid_price(symbol: str) -> float:
+def get_mid_price(symbol):
     """Get mid price (average of best bid and ask)"""
     ticker = get_ticker(symbol)
     return (ticker["bid"] + ticker["ask"]) / 2
 
-def get_spread(symbol: str) -> dict:
+def get_spread(symbol):
     """Get bid-ask spread information"""
     ticker = get_ticker(symbol)
     bid, ask = ticker["bid"], ticker["ask"]

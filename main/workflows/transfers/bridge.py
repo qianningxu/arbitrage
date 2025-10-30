@@ -1,7 +1,7 @@
 """Transfer workflows between Bybit and Jupiter"""
 from main.shared.data import get_token_info
 from main.Bybit.transfers import get_deposit_address, create_withdrawal
-from main.Jupiter.client import get_address
+from main.Jupiter.helper.client import get_address
 from main.Jupiter.transfers import send_sol, send_token
 
 def transfer_to_bybit(coin, amount):

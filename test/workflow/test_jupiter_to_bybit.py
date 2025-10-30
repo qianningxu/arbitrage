@@ -1,25 +1,25 @@
 """Test jupiter_to_bybit functions"""
 import sys
-import os
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '../..'))
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 
 from main.Bybit.transfers import get_deposit_address as get_bybit_deposit_address
 from main.workflows.transfers.bridge import transfer_to_bybit
 from main.workflows.arbitrage.consolidate_funds import consolidate_to_bybit as transfer_all_to_bybit
 
 
-def test_get_bybit_deposit_address():
-    """Get Bybit deposit address for SOL"""
-    address = get_bybit_deposit_address("SOL")
-    print(f"Bybit SOL deposit address: {address}")
+def test_get_bybit_deposit_address(coin):
+    """Get Bybit deposit address"""
+    address = get_bybit_deposit_address(coin)
+    print(f"Bybit {coin} deposit address: {address}")
 
 
-def test_transfer_to_bybit():
-    """Transfer SOL to Bybit (commented - real transfer)"""
+def test_transfer_to_bybit(coin, amount):
+    """Transfer crypto to Bybit (commented - real transfer)"""
     # Uncomment to execute real transfer:
-    # tx = transfer_to_bybit("SOL", 0.1)
+    # tx = transfer_to_bybit(coin, amount)
     # print(f"Transfer TX: {tx}")
-    print("Test transfer_to_bybit - uncomment to run real transfer")
+    print(f"Test transfer {amount} {coin} to Bybit - uncomment to run real transfer")
 
 
 def test_transfer_all_to_bybit():
@@ -41,11 +41,11 @@ if __name__ == "__main__":
     print("="*60 + "\n")
     
     print("Test 1: Get deposit address")
-    test_get_bybit_deposit_address()
+    test_get_bybit_deposit_address("SOL")
     print()
     
     print("Test 2: Transfer single crypto")
-    test_transfer_to_bybit()
+    test_transfer_to_bybit("SOL", 0.1)
     print()
     
     print("Test 3: Transfer ALL cryptos")
