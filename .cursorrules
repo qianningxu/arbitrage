@@ -3,7 +3,7 @@
     
     {
       "scope": "global",
-      "instruction": "Always read the files in the README directory before writing code, and always see if there is a need to update files under the README directory directory"
+      "instruction": "Always read the README/directory.md before writing code, and always see if there is a need to update files under the README/directory.md"
     },
     {
       "scope": "global",
