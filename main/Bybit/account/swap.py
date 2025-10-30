@@ -3,8 +3,8 @@ import json
 import requests
 from main.shared.config import BYBIT_API_BASE
 from main.shared.data import get_pair_info
-from .auth import sign_request
-from .pricing import get_buy_rate, get_sell_rate
+from ..helper.auth import sign_request
+from ..helper.pricing import get_buy_rate, get_sell_rate
 from .transfers import transfer_to_unified
 
 def place_market_order(symbol: str, side: str, qty: float, market_unit: str = None) -> dict:

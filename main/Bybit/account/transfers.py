@@ -30,7 +30,7 @@ def internal_transfer(coin, amount, from_account, to_account):
 
 def transfer_to_fund(coin=None, amount=None):
     """Transfer from UNIFIED to FUND"""
-    from main.Bybit.balance import get_balance, get_all_unified_balances
+    from main.Bybit.account.balance import get_balance, get_all_unified_balances
     if coin:
         if amount is None:
             amount = get_balance(coin, "UNIFIED")
@@ -61,7 +61,7 @@ def transfer_to_fund(coin=None, amount=None):
 
 def transfer_to_unified(coin=None, amount=None):
     """Transfer from FUND to UNIFIED"""
-    from main.Bybit.balance import get_balance, get_all_fund_balances
+    from main.Bybit.account.balance import get_balance, get_all_fund_balances
     if coin:
         if amount is None:
             amount = get_balance(coin, "FUND")
@@ -137,7 +137,7 @@ def create_withdrawal(coin, amount, address, chain="SOL"):
 
 def withdraw(symbol, chain="SOL"):
     """Withdraw all funds of a symbol to Jupiter wallet"""
-    from main.Bybit.balance import get_balance
+    from main.Bybit.account.balance import get_balance
     from main.Jupiter.helper.client import get_address
     from main.shared.data import get_withdrawal_fee
     

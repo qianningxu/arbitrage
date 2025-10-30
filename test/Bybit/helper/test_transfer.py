@@ -1,9 +1,9 @@
 """Test bybit_transfer functions"""
 import sys
 from pathlib import Path
-sys.path.insert(0, str(Path(__file__).parent.parent.parent))
+sys.path.insert(0, str(Path(__file__).parent.parent.parent.parent))
 
-from main.Bybit.transfers import transfer_to_unified as transfer_all_to_unified
+from main.Bybit.account.transfers import transfer_to_unified as transfer_all_to_unified
 
 
 def test_transfer_all_to_unified():

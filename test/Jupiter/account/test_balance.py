@@ -1,9 +1,9 @@
 """Test Jupiter balance functions"""
 import sys
 from pathlib import Path
-sys.path.insert(0, str(Path(__file__).parent.parent.parent))
+sys.path.insert(0, str(Path(__file__).parent.parent.parent.parent))
 
-from main.Jupiter.balance import check_balance
+from main.Jupiter.account.balance import check_balance
 
 
 def test_check_balance(symbol):

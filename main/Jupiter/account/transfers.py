@@ -7,10 +7,10 @@ from solana.rpc.commitment import Processed
 from solana.rpc.types import TxOpts
 from spl.token.instructions import transfer_checked, TransferCheckedParams, get_associated_token_address, create_associated_token_account
 from spl.token.constants import TOKEN_PROGRAM_ID
-from .helper.client import get_client, get_keypair
+from ..helper.client import get_client, get_keypair
 from .balance import get_sol_balance, get_token_balance
 from main.shared.data import get_token_info
-from main.Bybit.transfers import get_deposit_address
+from main.Bybit.account.transfers import get_deposit_address
 
 def send_sol(destination, amount):
     """Send native SOL to a destination"""

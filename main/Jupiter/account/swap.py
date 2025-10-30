@@ -5,8 +5,8 @@ from solders.transaction import VersionedTransaction
 from solana.rpc.commitment import Processed
 from solana.rpc.types import TxOpts
 from main.shared.data import get_token_info
-from .helper.client import get_client, get_keypair
-from .pricing import get_quote, get_recent_priority_fees
+from ..helper.client import get_client, get_keypair
+from ..helper.pricing import get_quote
 from .balance import check_balance
 
 def execute_swap(quote, priority_fee_lamports=None):

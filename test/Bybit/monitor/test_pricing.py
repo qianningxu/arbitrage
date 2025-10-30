@@ -1,9 +1,9 @@
 """Test get_bybit_price functions"""
 import sys
 from pathlib import Path
-sys.path.insert(0, str(Path(__file__).parent.parent.parent))
+sys.path.insert(0, str(Path(__file__).parent.parent.parent.parent))
 
-from main.Bybit.pricing import get_orderbook, get_sell_rate, get_buy_rate
+from main.Bybit.monitor.pricing import get_orderbook, get_sell_rate, get_buy_rate
 
 
 def test_get_orderbook(symbol, depth=10):

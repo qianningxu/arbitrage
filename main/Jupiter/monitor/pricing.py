@@ -62,23 +62,3 @@ def get_price_from_bybit_symbol(symbol):
     if not input_symbol or not output_symbol:
         return None
     return get_exchange_rate(input_symbol, output_symbol, 1)
-
-def get_recent_priority_fees():
-    """Get recent prioritization fees for adaptive fee setting"""
-    from .helper.client import get_client
-    client = get_client()
-    try:
-        fees_response = client.get_recent_prioritization_fees()
-        if fees_response.value:
-            fees = [f.prioritization_fee for f in fees_response.value]
-            fees.sort()
-            return {
-                "min": min(fees) if fees else 0,
-                "p50": fees[len(fees)//2] if fees else 0,
-                "p75": fees[len(fees)*3//4] if fees else 0,
-                "max": max(fees) if fees else 0
-            }
-    except:
-        pass
-    return {"min": 0, "p50": 0, "p75": 0, "max": 0}
-

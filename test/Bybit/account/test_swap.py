@@ -12,9 +12,9 @@ Scenario 2 (u_to_crypto): Bybit Trading
 """
 import sys
 from pathlib import Path
-sys.path.insert(0, str(Path(__file__).parent.parent.parent))
+sys.path.insert(0, str(Path(__file__).parent.parent.parent.parent))
 
-from main.Bybit.swap import crypto_to_u, u_to_crypto
+from main.Bybit.account.swap import crypto_to_u, u_to_crypto
 
 
 def test_crypto_to_u(symbol):

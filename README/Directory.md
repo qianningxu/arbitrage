@@ -4,19 +4,23 @@
 main/
 ├── Bybit/                        # Bybit exchange operations
 │   ├── helper/
-│   │   ├── auth.py               # Authentication & signing
+│   │   └── auth.py               # Authentication & signing
+│   ├── monitor/
 │   │   └── pricing.py            # Orderbook & price calculation
-│   ├── balance.py                # Balance retrieval
-│   ├── swap.py                   # Spot trading (swaps)
-│   └── transfers.py              # Internal transfers & withdrawals
+│   └── account/
+│       ├── balance.py            # Balance retrieval
+│       ├── swap.py               # Spot trading (swaps)
+│       └── transfers.py          # Internal transfers & withdrawals
 │
 ├── Jupiter/                      # Jupiter/Solana operations
 │   ├── helper/
 │   │   └── client.py             # RPC client & wallet basics
-│   ├── balance.py                # Balance checking
-│   ├── pricing.py                # Price quotes from Jupiter
-│   ├── swap.py                   # Swap execution via Jupiter
-│   └── transfers.py              # Send SOL/SPL tokens
+│   ├── monitor/
+│   │   └── pricing.py            # Price quotes from Jupiter
+│   └── account/
+│       ├── balance.py            # Balance checking
+│       ├── swap.py               # Swap execution via Jupiter
+│       └── transfers.py          # Send SOL/SPL tokens
 │
 ├── shared/                       # Shared utilities
 │   ├── config.py                 # Environment vars & keypairs
@@ -31,29 +35,32 @@ main/
         └── bridge.py             # Transfer between Bybit ↔ Jupiter
 
 test/
-├── Bybit/                        # Bybit tests
+├── Bybit/                        
 │   ├── helper/
 │   │   ├── test_auth.py
 │   │   ├── test_info.py
-│   │   └── test_min_order.py
-│   ├── test_balance.py
-│   ├── test_pricing.py
-│   ├── test_transfer.py
-│   ├── test_withdraw.py
-│   └── test_bybit_swap.py
+│   │   ├── test_min_order.py
+│   │   └── test_transfer.py
+│   ├── monitor/
+│   │   └── test_pricing.py
+│   └── account/
+│       ├── test_balance.py
+│       ├── test_swap.py
+│       └── test_withdraw.py
 │
-├── Jupiter/                      # Jupiter/Solana tests
+├── Jupiter/                      
 │   ├── helper/
 │   │   ├── test_get_id_from_pairs.py
-│   │   ├── test_pricing.py
-│   │   └── test_quote.py
-│   ├── test_balance.py
-│   ├── test_pricing.py
-│   ├── test_quote.py
-│   ├── test_swap.py
-│   └── test_withdraw.py
+│   │   ├── test_quote.py
+│   │   └── test_quote_fees.py
+│   ├── monitor/
+│   │   └── test_pricing.py
+│   └── account/
+│       ├── test_balance.py
+│       ├── test_swap.py
+│       └── test_withdraw.py
 │
-└── workflow/                     # Cross-platform workflow tests
+└── workflow/                     
     ├── test_arbitrage_strategy.py
     ├── test_bybit_to_jupiter.py
     └── test_jupiter_to_bybit.py

@@ -2,7 +2,7 @@
 from solders.pubkey import Pubkey
 from spl.token.instructions import get_associated_token_address
 from main.shared.data import get_token_info
-from .helper.client import get_client, get_keypair
+from ..helper.client import get_client, get_keypair
 
 def get_sol_balance():
     """Get SOL balance"""

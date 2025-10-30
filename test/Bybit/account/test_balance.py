@@ -1,9 +1,9 @@
 """Test bybit_balance functions"""
 import sys
 from pathlib import Path
-sys.path.insert(0, str(Path(__file__).parent.parent.parent))
+sys.path.insert(0, str(Path(__file__).parent.parent.parent.parent))
 
-from main.Bybit.balance import get_fund_balance, get_unified_balance
+from main.Bybit.account.balance import get_fund_balance, get_unified_balance
 
 
 def test_get_fund_balance(symbol):

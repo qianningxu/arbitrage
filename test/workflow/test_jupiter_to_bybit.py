@@ -3,7 +3,7 @@ import sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 
-from main.Bybit.transfers import get_deposit_address as get_bybit_deposit_address
+from main.Bybit.account.transfers import get_deposit_address as get_bybit_deposit_address
 from main.workflows.transfers.bridge import transfer_to_bybit
 from main.workflows.arbitrage.consolidate_funds import consolidate_to_bybit as transfer_all_to_bybit
 
