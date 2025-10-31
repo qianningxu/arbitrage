@@ -2,13 +2,12 @@
 Simple demo test for bybit swap scenarios
 
 Scenario 1 (crypto_to_u): Jupiter → Bybit
-- Crypto just arrived from Jupiter in FUND account
-- Transfer all crypto from FUND → UNIFIED
-- Swap all available crypto in UNIFIED → USDT
+- Crypto arrives from Jupiter in FUND account
+- Function checks FUND balance, transfers to UNIFIED, then swaps to USDT
 
 Scenario 2 (u_to_crypto): Bybit Trading
 - All funds are USDT in UNIFIED (after Scenario 1)
-- Swap all available USDT → target crypto
+- Places limit order (IOC) to buy target crypto at specified price
 """
 import sys
 from pathlib import Path
@@ -18,12 +17,11 @@ from main.bybit.account.swap import crypto_to_u, u_to_crypto, place_limit_order
 
 
 def test_crypto_to_u(symbol):
-    """Test Scenario 1: Convert all crypto from FUND to USDT in UNIFIED
+    """Test Scenario 1: Convert all crypto from FUND to USDT
     
     After receiving crypto from Jupiter:
-    1. Checks crypto balance in FUND
-    2. Transfers all crypto from FUND → UNIFIED
-    3. Swaps all available crypto in UNIFIED → USDT (market order)
+    1. Checks balance in FUND account
+    2. Calls swap() which transfers FUND → UNIFIED and executes market order
     """
     result = crypto_to_u(symbol)
     print(f"✅ crypto_to_u completed - Order ID: {result['orderId']}")
@@ -64,6 +62,8 @@ if __name__ == "__main__":
     # === Main workflow tests ===
     # test_crypto_to_u('SOL')  # Convert all SOL from FUND to USDT
     
-    # Test scenario: IOC order that should be cancelled (need sufficient USDT balance first)
-    # If you have enough USDT (e.g., >$10), uncomment below to see IOC cancellation:
-    test_u_to_crypto('SOL', 10.0)  # Buy at $10 (far below market ~$150-200), IOC will cancel
+    # Test with USDC (requires USDC balance in FUND account)
+    test_crypto_to_u('USDC')  # Sell all USDC from FUND → USDT
+    
+    # Test u_to_crypto: Buy crypto with USDT at specific price (IOC order)
+    # test_u_to_crypto('SOL', 10)  # IOC at $10 (far below market), will be cancelled

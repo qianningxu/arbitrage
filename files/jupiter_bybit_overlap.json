@@ -1,0 +1,957 @@
+[
+  {
+    "symbol": "ACS",
+    "contractAddress": "5MAYDfq5yxtudAhtfyuMBuHZjgAbaS9tbEyEQYAhDS5y",
+    "decimals": 6,
+    "name": "Access Protocol",
+    "logoURI": "https://ap-staging.fra1.digitaloceanspaces.com/1663691449945",
+    "tags": [
+      "community",
+      "solana-fm"
+    ],
+    "bybit": {
+      "withdrawFee": "1000",
+      "withdrawMin": "380",
+      "depositEnabled": true,
+      "withdrawEnabled": true
+    }
+  },
+  {
+    "symbol": "BAN",
+    "contractAddress": "CfztF8ic4PYvQjEFzZLhYTBBzz2c1zxL4DfFXtiHaaMD",
+    "decimals": 6,
+    "name": "Bitch Ass Nigga",
+    "logoURI": "https://bafkreigz4qrd3iv5o3uc54tsf2espyg3jvz6ygoi4gkj6dvdq6rbdqozn4.ipfs.nftstorage.link",
+    "tags": [
+      "unknown"
+    ],
+    "bybit": {
+      "withdrawFee": "15",
+      "withdrawMin": "15",
+      "depositEnabled": true,
+      "withdrawEnabled": true
+    }
+  },
+  {
+    "symbol": "BMT",
+    "contractAddress": "FanJWA4yEVUJj1r83tR7XybxmDGF6bNH8M81ag9aeUbF",
+    "decimals": 9,
+    "name": "BMT",
+    "logoURI": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/FanJWA4yEVUJj1r83tR7XybxmDGF6bNH8M81ag9aeUbF/logo.png",
+    "tags": [
+      "old-registry",
+      "solana-fm"
+    ],
+    "bybit": {
+      "withdrawFee": "15",
+      "withdrawMin": "15",
+      "depositEnabled": true,
+      "withdrawEnabled": true
+    }
+  },
+  {
+    "symbol": "BOME",
+    "contractAddress": "ukHH6c7mMyiWCf1b9pnWe25TSpkDDt3H5pQZgZ74J82",
+    "decimals": 6,
+    "name": "BOOK OF MEME",
+    "logoURI": "https://bafybeidov7gddabmqke3fozpuvlllp3q2c537f2vfyyf6or4spbbao6cee.ipfs.nftstorage.link/",
+    "tags": [
+      "community"
+    ],
+    "bybit": {
+      "withdrawFee": "519.49164",
+      "withdrawMin": "200",
+      "depositEnabled": true,
+      "withdrawEnabled": true
+    }
+  },
+  {
+    "symbol": "BONK",
+    "contractAddress": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+    "decimals": 5,
+    "name": "Bonk",
+    "logoURI": "https://arweave.net/hQiPZOsRZXGXBJd_82PhVdlM_hACsT_q6wqwf5cSY7I?ext=png",
+    "tags": [
+      "community"
+    ],
+    "bybit": {
+      "withdrawFee": "40000",
+      "withdrawMin": "50000",
+      "depositEnabled": true,
+      "withdrawEnabled": true
+    }
+  },
+  {
+    "symbol": "CLOUD",
+    "contractAddress": "CLoUDKc4Ane7HeQcPpE3YHnznRxhMimJ4MyaUqyHFzAu",
+    "decimals": 9,
+    "name": "Cloud",
+    "logoURI": "https://arweave.net/N7vCgQdgQ-fab28zEB4m8QRLMwI91_KcXI-Gtr151gg",
+    "tags": [
+      "community"
+    ],
+    "bybit": {
+      "withdrawFee": "10",
+      "withdrawMin": "8",
+      "depositEnabled": true,
+      "withdrawEnabled": true
+    }
+  },
+  {
+    "symbol": "COMMON",
+    "contractAddress": "3SEzYFeszjeD5t9XyixjZgVzwSrwg7k3fo5SPDPBpump",
+    "decimals": 6,
+    "name": "Common Sense",
+    "logoURI": "https://cf-ipfs.com/ipfs/Qmd5di5CGPtSFwyTkfH3rNYBoirkRobvAPN6GNKrCm5eNx",
+    "tags": [
+      "unknown"
+    ],
+    "bybit": {
+      "withdrawFee": "30",
+      "withdrawMin": "60",
+      "depositEnabled": true,
+      "withdrawEnabled": false
+    }
+  },
+  {
+    "symbol": "DBR",
+    "contractAddress": "8vG7Pt67yv2uA3GQQwDmkNM3fA75NE3yH9phjAqNpump",
+    "decimals": 6,
+    "name": "DegenBricks",
+    "logoURI": "https://cf-ipfs.com/ipfs/QmYBHnTafnybWZfvjESQrbXTDWt2xnVP4LnhjfufGpD1Lt",
+    "tags": [
+      "unknown"
+    ],
+    "bybit": {
+      "withdrawFee": "30",
+      "withdrawMin": "20",
+      "depositEnabled": true,
+      "withdrawEnabled": true
+    }
+  },
+  {
+    "symbol": "DOOD",
+    "contractAddress": "E759Tk1WkYXLEVLtPh2Td1cAgSxeA1d7oXHYaHycpump",
+    "decimals": 6,
+    "name": "Doodlebob",
+    "logoURI": "https://cf-ipfs.com/ipfs/QmaE38NwnHsuUcEjfcx9QoBUs2eGDdqXDpw9XSKGKBgTGg",
+    "tags": [
+      "unknown"
+    ],
+    "bybit": {
+      "withdrawFee": "300",
+      "withdrawMin": "400",
+      "depositEnabled": true,
+      "withdrawEnabled": true
+    }
+  },
+  {
+    "symbol": "DRIFT",
+    "contractAddress": "DriFtupJYLTosbwoN8koMbEYSx54aFAVLddWsbksjwg7",
+    "decimals": 6,
+    "name": "Drift",
+    "logoURI": "https://metadata.drift.foundation/drift.png",
+    "tags": [
+      "community"
+    ],
+    "bybit": {
+      "withdrawFee": "1.05",
+      "withdrawMin": "0.7",
+      "depositEnabled": true,
+      "withdrawEnabled": true
+    }
+  },
+  {
+    "symbol": "ES",
+    "contractAddress": "HDkjPhtAKWVJrVxx2XGmPHgfnBM7YX4fiYYp8kL6pump",
+    "decimals": 6,
+    "name": "EyeOfTheStorm",
+    "logoURI": "https://cf-ipfs.com/ipfs/QmVdUK8Yp7kx6ypkJUDHnYAp7v6jh2vUA2gq9Hdm6fqQQ2",
+    "tags": [
+      "unknown"
+    ],
+    "bybit": {
+      "withdrawFee": "4",
+      "withdrawMin": "8",
+      "depositEnabled": true,
+      "withdrawEnabled": false
+    }
+  },
+  {
+    "symbol": "FIDA",
+    "contractAddress": "EchesyfXePKdLtoiZSL8pBe8Myagyy8ZRqsACNCFGnvp",
+    "decimals": 6,
+    "name": "Bonfida",
+    "logoURI": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/EchesyfXePKdLtoiZSL8pBe8Myagyy8ZRqsACNCFGnvp/logo.svg",
+    "tags": [
+      "old-registry",
+      "solana-fm"
+    ],
+    "bybit": {
+      "withdrawFee": "9.012575",
+      "withdrawMin": "1.5",
+      "depositEnabled": true,
+      "withdrawEnabled": true
+    }
+  },
+  {
+    "symbol": "FRAG",
+    "contractAddress": "J4mTKUvLHLTKRc1TvZyFQZyXbMyjtRxxNQ8g4gRE4wVZ",
+    "decimals": 6,
+    "name": "FrAG",
+    "logoURI": "https://cf-ipfs.com/ipfs/QmdgkGCHgc5pP6kdKtoCKPRAWP73S65gViYk8FWVjCZ5RX",
+    "tags": [
+      "unknown"
+    ],
+    "bybit": {
+      "withdrawFee": "50",
+      "withdrawMin": "100",
+      "depositEnabled": true,
+      "withdrawEnabled": true
+    }
+  },
+  {
+    "symbol": "GMT",
+    "contractAddress": "7i5KKsX2weiTkry7jA4ZwSuXGhs5eJBEjY8vVxR4pfRx",
+    "decimals": 9,
+    "name": "GMT",
+    "logoURI": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/7i5KKsX2weiTkry7jA4ZwSuXGhs5eJBEjY8vVxR4pfRx/logo.png",
+    "tags": [
+      "old-registry",
+      "solana-fm"
+    ],
+    "bybit": {
+      "withdrawFee": "15",
+      "withdrawMin": "3",
+      "depositEnabled": true,
+      "withdrawEnabled": true
+    }
+  },
+  {
+    "symbol": "GOAT",
+    "contractAddress": "EWKhTUjYGiBmpNxt64XBAAqZfQrcprysLrP56GaLVBAd",
+    "decimals": 9,
+    "name": "GOAT POWERED BY SOLANA",
+    "logoURI": "https://media.discordapp.net/attachments/1194415787310587944/1203863272055504906/HERO5.png?ex=65d2a40a&is=65c02f0a&hm=987d7ed7fa5dd89fa1c6c0f63ea78eb69e170d6965dd4b1f0773bc05f17c909f&=&format=webp&quality=lossless&width=1202&height=676",
+    "tags": [
+      "unknown"
+    ],
+    "bybit": {
+      "withdrawFee": "9",
+      "withdrawMin": "10",
+      "depositEnabled": true,
+      "withdrawEnabled": true
+    }
+  },
+  {
+    "symbol": "GRASS",
+    "contractAddress": "GYfu6c7sr5r8fU4GfzTNGEtQY9y1tgksq6uJGaBzpump",
+    "decimals": 6,
+    "name": "TOUCH GRASS",
+    "logoURI": "https://cf-ipfs.com/ipfs/QmZePec9gnEGPAbu41VcE4VNMbpTQrZUgat7kGpkXjSSq7",
+    "tags": [
+      "unknown"
+    ],
+    "bybit": {
+      "withdrawFee": "1.6",
+      "withdrawMin": "1",
+      "depositEnabled": true,
+      "withdrawEnabled": true
+    }
+  },
+  {
+    "symbol": "HNT",
+    "contractAddress": "hntyVP6YFm1Hg25TN9WGLqM12b8TQmcknKrdu1oxWux",
+    "decimals": 8,
+    "name": "Helium Network Token",
+    "logoURI": "https://shdw-drive.genesysgo.net/CsDkETHRRR1EcueeN346MJoqzymkkr7RFjMqGpZMzAib/hnt.png",
+    "tags": [
+      "community",
+      "solana-fm"
+    ],
+    "bybit": {
+      "withdrawFee": "0.25",
+      "withdrawMin": "0.25",
+      "depositEnabled": true,
+      "withdrawEnabled": true
+    }
+  },
+  {
+    "symbol": "HOLO",
+    "contractAddress": "9udGDkGV8SpUsbLLRbqbY2YkmqeJzRzt3cnoojLU55AB",
+    "decimals": 9,
+    "name": "The HoloCoin",
+    "logoURI": "https://bafybeih7bzxcbzgprkzu3vy27khejfa3nyqxftapmahgwrbumexw75kx3a.ipfs.cf-ipfs.com",
+    "tags": [
+      "unknown"
+    ],
+    "bybit": {
+      "withdrawFee": "2",
+      "withdrawMin": "4",
+      "depositEnabled": true,
+      "withdrawEnabled": false
+    }
+  },
+  {
+    "symbol": "HOME",
+    "contractAddress": "2QC9fREiAu6JCHV7Zz15CKd2ebBCVL1Sm6aoZdjn8jo6",
+    "decimals": 1,
+    "name": "Homer Of Meme",
+    "logoURI": "https://bafkreih7tolmmbkwd3tepbjsgjh46yo2pwx6ddczgcvvbbzepms67gxb6y.ipfs.nftstorage.link",
+    "tags": [
+      "unknown"
+    ],
+    "bybit": {
+      "withdrawFee": "20",
+      "withdrawMin": "40",
+      "depositEnabled": true,
+      "withdrawEnabled": true
+    }
+  },
+  {
+    "symbol": "HUMA",
+    "contractAddress": "B8AoZHJQABaC2cGTbJ1Dio1uG2m9vYHNkzigCoXxUv8S",
+    "decimals": 9,
+    "name": "Human-Machine Alliance",
+    "logoURI": "https://gateway.irys.xyz/K7j4QmRkmU9iLh8bzSiNcPTf2WwmoFumcmkSDRyWMWY",
+    "tags": [
+      "unknown"
+    ],
+    "bybit": {
+      "withdrawFee": "40",
+      "withdrawMin": "80",
+      "depositEnabled": true,
+      "withdrawEnabled": true
+    }
+  },
+  {
+    "symbol": "IO",
+    "contractAddress": "BZLbGTNCSFfoth2GYDtwr7e4imWzpR5jqcUuGEwr646K",
+    "decimals": 8,
+    "name": "IO",
+    "logoURI": "https://bafkreicnqsbhpzxiasdm5esr7fqi3vcjvcbfefo4sq4y3ff747rfqf7w7i.ipfs.nftstorage.link",
+    "tags": [
+      "community"
+    ],
+    "bybit": {
+      "withdrawFee": "1.5",
+      "withdrawMin": "0.2",
+      "depositEnabled": true,
+      "withdrawEnabled": true
+    }
+  },
+  {
+    "symbol": "J",
+    "contractAddress": "J7TPAoZdiKrzVvQCNdxuHa9jEqQHtZCUqvwqcHiSVmXE",
+    "decimals": 9,
+    "name": "Jesus",
+    "logoURI": "https://ipfs.io/ipfs/QmWvu9RSFbyte1oXF8w54afXnCNz2yFv2EPDe6Up5t7nEk",
+    "tags": [
+      "unknown"
+    ],
+    "bybit": {
+      "withdrawFee": "10",
+      "withdrawMin": "4",
+      "depositEnabled": true,
+      "withdrawEnabled": true
+    }
+  },
+  {
+    "symbol": "JTO",
+    "contractAddress": "jtojtomepa8beP8AuQc6eXt5FriJwfFMwQx2v2f9mCL",
+    "decimals": 9,
+    "name": "JITO",
+    "logoURI": "https://metadata.jito.network/token/jto/image",
+    "tags": [
+      "community",
+      "solana-fm"
+    ],
+    "bybit": {
+      "withdrawFee": "0.5",
+      "withdrawMin": "0.5",
+      "depositEnabled": true,
+      "withdrawEnabled": true
+    }
+  },
+  {
+    "symbol": "JUP",
+    "contractAddress": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
+    "decimals": 6,
+    "name": "Jupiter",
+    "logoURI": "https://static.jup.ag/jup/icon.png",
+    "tags": [
+      "community"
+    ],
+    "bybit": {
+      "withdrawFee": "1.2",
+      "withdrawMin": "0.5",
+      "depositEnabled": true,
+      "withdrawEnabled": true
+    }
+  },
+  {
+    "symbol": "K",
+    "contractAddress": "FcPJNDkAAAy8wKfhrv6VZN4ddiEh1obt8eRozC61pump",
+    "decimals": 6,
+    "name": "K",
+    "logoURI": "https://cf-ipfs.com/ipfs/QmQYd17s96EUe5tu5VzkGr97TJhc7WJq57hBFkpsAi7Mmq",
+    "tags": [
+      "unknown"
+    ],
+    "bybit": {
+      "withdrawFee": "18",
+      "withdrawMin": "6",
+      "depositEnabled": true,
+      "withdrawEnabled": true
+    }
+  },
+  {
+    "symbol": "KMNO",
+    "contractAddress": "KMNo3nJsBXfcpJTVhZcXLW7RmTwTt4GVFE7suUBo9sS",
+    "decimals": 6,
+    "name": "Kamino",
+    "logoURI": "https://cdn.kamino.finance/kamino.svg",
+    "tags": [
+      "community"
+    ],
+    "bybit": {
+      "withdrawFee": "10",
+      "withdrawMin": "10",
+      "depositEnabled": true,
+      "withdrawEnabled": true
+    }
+  },
+  {
+    "symbol": "LAYER",
+    "contractAddress": "7L8D1b8YDnmprghiFHjTH52EDrzPLn27LEfEmDWYpump",
+    "decimals": 6,
+    "name": "layer",
+    "logoURI": "https://cf-ipfs.com/ipfs/QmYgX6qBh8dNUWjq4XsNiw2iEVb9KDgPThRognn9rp4Fem",
+    "tags": [
+      "unknown"
+    ],
+    "bybit": {
+      "withdrawFee": "3",
+      "withdrawMin": "6",
+      "depositEnabled": true,
+      "withdrawEnabled": true
+    }
+  },
+  {
+    "symbol": "ME",
+    "contractAddress": "G62hSQ7CrcYYgd1J5u14GAmUeYwRtnJx4PfNJ1Hjpump",
+    "decimals": 6,
+    "name": "me",
+    "logoURI": "https://cf-ipfs.com/ipfs/QmTTFtXzJcQupkGhffF3YWjuxw4B3LgsSzJnzaepPpvU3H",
+    "tags": [
+      "unknown"
+    ],
+    "bybit": {
+      "withdrawFee": "1.5",
+      "withdrawMin": "1.5",
+      "depositEnabled": true,
+      "withdrawEnabled": true
+    }
+  },
+  {
+    "symbol": "MET",
+    "contractAddress": "EPeyyobYzGcd6e9j5PVFZccT3XxCYEKzfYGCF5eaogHw",
+    "decimals": 6,
+    "name": "Meteora",
+    "logoURI": "https://i.ibb.co/j4fL5r4/IMG-2191.png",
+    "tags": [
+      "unknown"
+    ],
+    "bybit": {
+      "withdrawFee": "2",
+      "withdrawMin": "4",
+      "depositEnabled": true,
+      "withdrawEnabled": true
+    }
+  },
+  {
+    "symbol": "MEW",
+    "contractAddress": "MEW1gQWJ3nEXg2qgERiKu7FAFj79PHvQVREQUzScPP5",
+    "decimals": 5,
+    "name": "cat in a dogs world",
+    "logoURI": "https://bafkreidlwyr565dxtao2ipsze6bmzpszqzybz7sqi2zaet5fs7k53henju.ipfs.nftstorage.link/",
+    "tags": [
+      "community"
+    ],
+    "bybit": {
+      "withdrawFee": "288",
+      "withdrawMin": "160",
+      "depositEnabled": true,
+      "withdrawEnabled": true
+    }
+  },
+  {
+    "symbol": "MPLX",
+    "contractAddress": "METAewgxyPbgwsseH8T16a39CQ5VyVxZi9zXiDPY18m",
+    "decimals": 6,
+    "name": "Metaplex Token",
+    "logoURI": "https://arweave.net/VRKOcXIvCxqp35RZ9I0-bDGk5qNfT46OTho-2oP9iGc",
+    "tags": [
+      "old-registry",
+      "solana-fm"
+    ],
+    "bybit": {
+      "withdrawFee": "3",
+      "withdrawMin": "3.2",
+      "depositEnabled": true,
+      "withdrawEnabled": true
+    }
+  },
+  {
+    "symbol": "MYRO",
+    "contractAddress": "7njw6ipFQe8Q2WcwjLfGjzHZZJ4oCK4EE5CwBdj27eSY",
+    "decimals": 9,
+    "name": "Myro",
+    "logoURI": "https://pbs.twimg.com/profile_images/1721111805752213504/OGwRm3SG_400x400.jpg",
+    "tags": [
+      "unknown"
+    ],
+    "bybit": {
+      "withdrawFee": "50",
+      "withdrawMin": "100",
+      "depositEnabled": true,
+      "withdrawEnabled": true
+    }
+  },
+  {
+    "symbol": "NEON",
+    "contractAddress": "NeonTjSjsuo3rexg9o6vHuMXw62f9V7zvmu8M8Zut44",
+    "decimals": 9,
+    "name": "Neon EVM",
+    "logoURI": "https://raw.githubusercontent.com/neonevm/neon-evm.docs/main/static/icons/token.svg",
+    "tags": [
+      "community"
+    ],
+    "bybit": {
+      "withdrawFee": "7",
+      "withdrawMin": "4",
+      "depositEnabled": true,
+      "withdrawEnabled": true
+    }
+  },
+  {
+    "symbol": "PAWS",
+    "contractAddress": "5fwDxPkMr1L9M6kczSQgkfuJBdfYykBf66zVhiBnpump",
+    "decimals": 6,
+    "name": "Purrfect Paws",
+    "logoURI": "https://cf-ipfs.com/ipfs/QmddFkZXKtM7GPKrKf4FTU7vNC58KtxQcsdHy79tXY6ShD",
+    "tags": [
+      "unknown"
+    ],
+    "bybit": {
+      "withdrawFee": "33117.457142",
+      "withdrawMin": "4000",
+      "depositEnabled": true,
+      "withdrawEnabled": true
+    }
+  },
+  {
+    "symbol": "PENGU",
+    "contractAddress": "7bkcNPoP7Ytn3F7KHtHb7NQVvsA7YGFZGVEzmS3ipump",
+    "decimals": 6,
+    "name": "Pengu",
+    "logoURI": "https://cf-ipfs.com/ipfs/QmNbzJiJTmfkJde1hCCRPoAFiJMnuqKwJZFqMyfwztj5pN",
+    "tags": [
+      "unknown"
+    ],
+    "bybit": {
+      "withdrawFee": "100",
+      "withdrawMin": "200",
+      "depositEnabled": true,
+      "withdrawEnabled": true
+    }
+  },
+  {
+    "symbol": "PNUT",
+    "contractAddress": "56w3WhhXCQL824Tfb8rvEGn9tmRx4L9EyimyiDdgpump",
+    "decimals": 6,
+    "name": "Pea Nut",
+    "logoURI": "https://cf-ipfs.com/ipfs/QmQh65KQSy3ECtQ7fZn4oTQgaBLhbZSxxVvaiUtAv8RNwT",
+    "tags": [
+      "unknown"
+    ],
+    "bybit": {
+      "withdrawFee": "6",
+      "withdrawMin": "6",
+      "depositEnabled": true,
+      "withdrawEnabled": true
+    }
+  },
+  {
+    "symbol": "PONKE",
+    "contractAddress": "5z3EqYQo9HiCEs3R84RCDMu2n7anpDMxRhdK8PSWmrRC",
+    "decimals": 9,
+    "name": "PONKE",
+    "logoURI": "https://gateway.irys.xyz/YBMDVBvnfgO1gXCSmmc8p0RQhc69WWe8_kOkoT8w7nE",
+    "tags": [
+      "community"
+    ],
+    "bybit": {
+      "withdrawFee": "7",
+      "withdrawMin": "4",
+      "depositEnabled": true,
+      "withdrawEnabled": true
+    }
+  },
+  {
+    "symbol": "POPCAT",
+    "contractAddress": "7GCihgDB8fe6KNjn2MYtkzZcRjQy3t9GHdC8uHYmW2hr",
+    "decimals": 9,
+    "name": "Popcat",
+    "logoURI": "https://bafkreidvkvuzyslw5jh5z242lgzwzhbi2kxxnpkic5wsvyno5ikvpr7reu.ipfs.nftstorage.link",
+    "tags": [
+      "community"
+    ],
+    "bybit": {
+      "withdrawFee": "4",
+      "withdrawMin": "4",
+      "depositEnabled": true,
+      "withdrawEnabled": true
+    }
+  },
+  {
+    "symbol": "PRCL",
+    "contractAddress": "4LLbsb5ReP3yEtYzmXewyGjcir5uXtKFURtaEUVC2AHs",
+    "decimals": 6,
+    "name": "Parcl",
+    "logoURI": "https://ipfs.filebase.io/ipfs/QmVDpnYjKMCBdmqGddQNyW8cc3tBU5cKZFiSV5y18J5YnK",
+    "tags": [
+      "community"
+    ],
+    "bybit": {
+      "withdrawFee": "12.198796",
+      "withdrawMin": "3",
+      "depositEnabled": true,
+      "withdrawEnabled": true
+    }
+  },
+  {
+    "symbol": "PUMP",
+    "contractAddress": "45m1abeSc4bcJEcTffAGnoxH4LSbpwn4ZJEgCTYMpump",
+    "decimals": 6,
+    "name": "Safe Pump",
+    "logoURI": "https://cf-ipfs.com/ipfs/QmPP8W84MNtS7miWNXnXbn9X8HqU525HMG96zuieA6FFCF",
+    "tags": [
+      "unknown"
+    ],
+    "bybit": {
+      "withdrawFee": "200",
+      "withdrawMin": "400",
+      "depositEnabled": true,
+      "withdrawEnabled": true
+    }
+  },
+  {
+    "symbol": "PYTH",
+    "contractAddress": "HZ1JovNiVvGrGNiiYvEozEVgZ58xaU3RKwX8eACQBCt3",
+    "decimals": 6,
+    "name": "Pyth Network",
+    "logoURI": "https://pyth.network/token.svg",
+    "tags": [
+      "community",
+      "solana-fm"
+    ],
+    "bybit": {
+      "withdrawFee": "6",
+      "withdrawMin": "2",
+      "depositEnabled": true,
+      "withdrawEnabled": true
+    }
+  },
+  {
+    "symbol": "PYUSD",
+    "contractAddress": "2b1kV6DkPAnxd5ixfnxCpjxmKwqjjaYmCZfHsFu24GXo",
+    "decimals": 6,
+    "name": "PayPal USD",
+    "logoURI": "https://424565.fs1.hubspotusercontent-na1.net/hubfs/424565/PYUSDLOGO.png",
+    "tags": [
+      "community",
+      "token-2022"
+    ],
+    "bybit": {
+      "withdrawFee": "1",
+      "withdrawMin": "0.5",
+      "depositEnabled": true,
+      "withdrawEnabled": true
+    }
+  },
+  {
+    "symbol": "RENDER",
+    "contractAddress": "rndrizKT3MK1iimdxRdWabcF7Zg7AR5T4nud4EkHBof",
+    "decimals": 8,
+    "name": "Render Token",
+    "logoURI": "https://shdw-drive.genesysgo.net/5zseP54TGrcz9C8HdjZwJJsZ6f3VbP11p1abwKWGykZH/rndr.png",
+    "tags": [
+      "community"
+    ],
+    "bybit": {
+      "withdrawFee": "0.2",
+      "withdrawMin": "0.1",
+      "depositEnabled": true,
+      "withdrawEnabled": true
+    }
+  },
+  {
+    "symbol": "SAROS",
+    "contractAddress": "SarosY6Vscao718M4A778z4CGtvcwcGef5M9MEH1LGL",
+    "decimals": 6,
+    "name": "Saros",
+    "logoURI": "https://rapid.coin98.com/Currency/saros.png",
+    "tags": [
+      "community"
+    ],
+    "bybit": {
+      "withdrawFee": "5",
+      "withdrawMin": "100",
+      "depositEnabled": true,
+      "withdrawEnabled": true
+    }
+  },
+  {
+    "symbol": "SOL",
+    "contractAddress": "So11111111111111111111111111111111111111112",
+    "decimals": 9,
+    "name": "Wrapped SOL",
+    "logoURI": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/So11111111111111111111111111111111111111112/logo.png",
+    "tags": [
+      "old-registry"
+    ],
+    "bybit": {
+      "withdrawFee": "0.008",
+      "withdrawMin": "0.03",
+      "depositEnabled": true,
+      "withdrawEnabled": true
+    }
+  },
+  {
+    "symbol": "SONIC",
+    "contractAddress": "7EW2NTuQFYKVxF3WTA1L1v62pxB7RFYmVC7veGxNDFis",
+    "decimals": 6,
+    "name": "Sonic Sniper",
+    "logoURI": "https://gateway.irys.xyz/4YjV9mHRSR89u80wMQm2-7cjvMsEJx47UyZE_JdZy-k",
+    "tags": [
+      "community"
+    ],
+    "bybit": {
+      "withdrawFee": "5",
+      "withdrawMin": "2",
+      "depositEnabled": true,
+      "withdrawEnabled": true
+    }
+  },
+  {
+    "symbol": "STOP",
+    "contractAddress": "9MEsHFCYeo1TABMYHWPhwGuUn6HNKcdnaPpW7CM4pump",
+    "decimals": 6,
+    "name": "STOP TANKING",
+    "logoURI": "https://cf-ipfs.com/ipfs/QmdsE6fGKzqfLf2ajDAUk3J7hP6nuuafyTWtrnPpNmbjjd",
+    "tags": [
+      "unknown"
+    ],
+    "bybit": {
+      "withdrawFee": "9.4053479",
+      "withdrawMin": "20",
+      "depositEnabled": true,
+      "withdrawEnabled": true
+    }
+  },
+  {
+    "symbol": "STREAM",
+    "contractAddress": "54jVZGHyWURX5evBtZqUsJjwoKzcZJbVokDU93AUZf2h",
+    "decimals": 9,
+    "name": "Solstream",
+    "logoURI": "https://i.ibb.co/B6Qwtnb/LOGO-SOLSTREAM-100.jpg",
+    "tags": [
+      "community"
+    ],
+    "bybit": {
+      "withdrawFee": "24",
+      "withdrawMin": "16",
+      "depositEnabled": true,
+      "withdrawEnabled": true
+    }
+  },
+  {
+    "symbol": "TAI",
+    "contractAddress": "72hT1sU9D62izJBxcqwiy7eGyQNs4aKHgTbA7Aunpump",
+    "decimals": 6,
+    "name": "TRUMPAI",
+    "logoURI": "https://cf-ipfs.com/ipfs/QmQNitV7CoHCUcjCus3vZaokFZd1JaAXokTyKHFcyDozVo",
+    "tags": [
+      "unknown"
+    ],
+    "bybit": {
+      "withdrawFee": "18",
+      "withdrawMin": "1",
+      "depositEnabled": true,
+      "withdrawEnabled": true
+    }
+  },
+  {
+    "symbol": "TNSR",
+    "contractAddress": "TNSRxcUxoT9xBG3de7PiJyTDYu7kskLqcpddxnEJAS6",
+    "decimals": 9,
+    "name": "Tensor",
+    "logoURI": "https://arweave.net/beGAyeIzjV_UkyjFtxbkZyi_YqfOBWayiQ0B6wqWygY",
+    "tags": [
+      "community"
+    ],
+    "bybit": {
+      "withdrawFee": "9",
+      "withdrawMin": "1",
+      "depositEnabled": true,
+      "withdrawEnabled": true
+    }
+  },
+  {
+    "symbol": "TRUMP",
+    "contractAddress": "HaP8r3ksG76PhQLTqR8FYBeNiQpejcFbQmiHbg787Ut1",
+    "decimals": 8,
+    "name": "MAGA (Wormhole)",
+    "logoURI": "https://magamemecoin.com/wp-content/uploads/cropped-MAGA-Memecoin-Favicon.png",
+    "tags": [
+      "community"
+    ],
+    "bybit": {
+      "withdrawFee": "0.075",
+      "withdrawMin": "0.1",
+      "depositEnabled": true,
+      "withdrawEnabled": true
+    }
+  },
+  {
+    "symbol": "TUNA",
+    "contractAddress": "9D6QRQ9GkvKVM5PPhWKBFwUZXsZRAte7XWXvdbJVpump",
+    "decimals": 6,
+    "name": "ACHI'S MOM",
+    "logoURI": "https://cf-ipfs.com/ipfs/QmenEFjyqECCB3wh4jKoAP3fdaDoKDrCFnF9PbPd1j6k55",
+    "tags": [
+      "unknown"
+    ],
+    "bybit": {
+      "withdrawFee": "10",
+      "withdrawMin": "40",
+      "depositEnabled": true,
+      "withdrawEnabled": true
+    }
+  },
+  {
+    "symbol": "USDC",
+    "contractAddress": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+    "decimals": 6,
+    "name": "USD Coin",
+    "logoURI": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v/logo.png",
+    "tags": [
+      "old-registry",
+      "solana-fm"
+    ],
+    "bybit": {
+      "withdrawFee": "1",
+      "withdrawMin": "1",
+      "depositEnabled": true,
+      "withdrawEnabled": true
+    }
+  },
+  {
+    "symbol": "USDT",
+    "contractAddress": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+    "decimals": 6,
+    "name": "Tether USD",
+    "logoURI": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB/logo.png",
+    "tags": [
+      "old-registry",
+      "solana-fm"
+    ],
+    "bybit": {
+      "withdrawFee": "1",
+      "withdrawMin": "1",
+      "depositEnabled": true,
+      "withdrawEnabled": true
+    }
+  },
+  {
+    "symbol": "W",
+    "contractAddress": "85VBFQZC9TZkfaptBWjvUw7YbZjy52A6mjtPGjstQAmQ",
+    "decimals": 6,
+    "name": "Wormhole Token",
+    "logoURI": "https://wormhole.com/token.png",
+    "tags": [
+      "community"
+    ],
+    "bybit": {
+      "withdrawFee": "10",
+      "withdrawMin": "3.3",
+      "depositEnabled": true,
+      "withdrawEnabled": true
+    }
+  },
+  {
+    "symbol": "WCT",
+    "contractAddress": "CqnNiH3kzdiR8PkRYGmMmPEFRqKg7BeGHhcC7u6Npump",
+    "decimals": 6,
+    "name": "Wrapped Cyber Truck",
+    "logoURI": "https://cf-ipfs.com/ipfs/QmdMsMMqBCFvy9A8x6qtTFBS72BAAyTn3xd78mqRhnhE3K",
+    "tags": [
+      "unknown"
+    ],
+    "bybit": {
+      "withdrawFee": "3",
+      "withdrawMin": "6",
+      "depositEnabled": true,
+      "withdrawEnabled": true
+    }
+  },
+  {
+    "symbol": "WEN",
+    "contractAddress": "WENWENvqqNya429ubCdR81ZmD69brwQaaBYY6p3LCpk",
+    "decimals": 5,
+    "name": "Wen",
+    "logoURI": "https://shdw-drive.genesysgo.net/GwJapVHVvfM4Mw4sWszkzywncUWuxxPd6s9VuFfXRgie/wen_logo.png",
+    "tags": [
+      "community"
+    ],
+    "bybit": {
+      "withdrawFee": "19500",
+      "withdrawMin": "20000",
+      "depositEnabled": true,
+      "withdrawEnabled": true
+    }
+  },
+  {
+    "symbol": "WIF",
+    "contractAddress": "6ounJ9SnYEXv5Jbcq87dqFpouWDKR1QTG6xYe2XFpump",
+    "decimals": 6,
+    "name": "CatWifSchizo",
+    "logoURI": "https://cf-ipfs.com/ipfs/QmNbKasvMfD4jHYWBoAzoRW9bimNeVszFwJcZYnJXrVbXR",
+    "tags": [
+      "unknown"
+    ],
+    "bybit": {
+      "withdrawFee": "0.890476",
+      "withdrawMin": "0.6",
+      "depositEnabled": true,
+      "withdrawEnabled": true
+    }
+  },
+  {
+    "symbol": "ZEX",
+    "contractAddress": "ZEXy1pqteRu3n13kdyh4LwPQknkFk3GzmMYMuNadWPo",
+    "decimals": 6,
+    "name": "Zeta",
+    "logoURI": "https://raw.githubusercontent.com/zetamarkets/brand/master/assets/zeta.png",
+    "tags": [
+      "community"
+    ],
+    "bybit": {
+      "withdrawFee": "30",
+      "withdrawMin": "30",
+      "depositEnabled": true,
+      "withdrawEnabled": true
+    }
+  }
+]

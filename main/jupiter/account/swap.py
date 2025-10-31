@@ -48,7 +48,7 @@ def execute_swap(quote, priority_fee_lamports=None):
     print(f"✅ Jupiter swap: https://solscan.io/tx/{tx_sig}")
     return tx_sig
 
-def swap(input_symbol, output_symbol, amount, slippage_bps=50, auto_priority_fee=True):
+def swap(input_symbol, output_symbol, amount, slippage_bps=50):
     """Swap tokens via Jupiter"""
     input_info = get_token_info(input_symbol)
     output_info = get_token_info(output_symbol)
@@ -63,27 +63,21 @@ def swap(input_symbol, output_symbol, amount, slippage_bps=50, auto_priority_fee
     if not quote:
         raise ValueError("Failed to get quote from Jupiter")
     print(f"🔄 Swapping {input_symbol} → {output_symbol}: {amount}")
-    priority_fee = None
-    if auto_priority_fee:
-        fees = get_recent_priority_fees()
-        priority_fee = fees["p75"]
-        if priority_fee > 0:
-            print(f"⚡ Priority fee: {priority_fee} lamports")
-    return execute_swap(quote, priority_fee)
+    return execute_swap(quote)
 
-def crypto_to_u(crypto, slippage_bps=100000, auto_priority_fee=True):
+def crypto_to_u(crypto, slippage_bps=100000):
     """Swap all crypto balance to USDT"""
     balance = check_balance(crypto)
     if balance <= 0:
         raise ValueError(f"No {crypto} balance to swap")
     print(f"💰 {crypto} balance: {balance}")
-    return swap(crypto, "USDT", balance, slippage_bps, auto_priority_fee)
+    return swap(crypto, "USDT", balance, slippage_bps)
 
-def u_to_crypto(crypto, slippage_bps=50, auto_priority_fee=True):
+def u_to_crypto(crypto, slippage_bps=50):
     """Swap all USDT to target crypto"""
     balance = check_balance("USDT")
     if balance <= 0:
         raise ValueError("No USDT balance to swap")
     print(f"💰 USDT balance: {balance}")
-    return swap("USDT", crypto, balance, slippage_bps, auto_priority_fee)
+    return swap("USDT", crypto, balance, slippage_bps)
 

@@ -8,14 +8,23 @@ from main.bybit.account.transfers import withdraw
 
 def test_withdraw(symbol):
     """Test withdrawing a token from Bybit to Jupiter"""
-    result = withdraw(symbol)
-    print(f"Withdrawal result: {result}")
-    if result:
-        print(f"✅ Successfully withdrew {result['amount']} {result['coin']} to {result['address']}")
-    else:
-        print("❌ No funds to withdraw")
+    try:
+        result = withdraw(symbol)
+        if result:
+            print(f"\n✅ Withdrawal successful!")
+            print(f"   Coin: {result['coin']}")
+            print(f"   Amount: {result['amount']}")
+            print(f"   Address: {result['address']}")
+            print(f"   Balance: {result['balance']}")
+            print(f"   Fee: {result['fee']}")
+        else:
+            print("\n❌ No funds to withdraw")
+    except ValueError as e:
+        print(f"\n⚠️  Withdrawal error: {str(e)}")
+        if "not whitelisted" in str(e):
+            print("💡 This is expected - please whitelist the address in Bybit first")
 
 
 if __name__ == "__main__":
-    test_withdraw('sol')
+    test_withdraw('USDC')
 

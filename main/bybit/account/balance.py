@@ -36,23 +36,3 @@ def get_all_balances(account_type):
                 balances[coin] = balance
     return balances
 
-def get_fund_balance(coin):
-    """Get balance in FUND account"""
-    return get_balance(coin, "FUND")
-
-def get_unified_balance(coin):
-    """Get balance in UNIFIED account"""
-    return get_balance(coin, "UNIFIED")
-
-def get_total_balance(coin):
-    """Get total balance across all accounts"""
-    return get_fund_balance(coin) + get_unified_balance(coin)
-
-def get_all_fund_balances():
-    """Get all non-zero balances in FUND account"""
-    return get_all_balances("FUND")
-
-def get_all_unified_balances():
-    """Get all non-zero balances in UNIFIED account"""
-    return get_all_balances("UNIFIED")
-

@@ -75,7 +75,7 @@ def place_limit_order(symbol: str, side: str, qty: float, price: float, time_in_
     }
 
 def swap(in_coin: str, out_coin: str, amount: float, amount_unit: str = "in") -> dict:
-    """Swap coins on Bybit spot market"""
+    """Swap coins on Bybit spot market (requires funds in UNIFIED account)"""
     in_coin, out_coin = in_coin.upper(), out_coin.upper()
     transfer_to_unified()
     symbol, side = None, None
@@ -101,7 +101,8 @@ def swap(in_coin: str, out_coin: str, amount: float, amount_unit: str = "in") ->
         if side == "Buy":
             qty = amount
         else:
-            avg_price = get_sell_rate(symbol, 0.01)["rate"]
+            base_coin = info['base']
+            avg_price = get_sell_rate(base_coin, 0.01)["rate"]
             qty = amount / avg_price
     
     # Only apply precision/minQty checks when not using quoteCoin market unit
@@ -119,19 +120,15 @@ def swap(in_coin: str, out_coin: str, amount: float, amount_unit: str = "in") ->
     return result
 
 def crypto_to_u(crypto: str) -> dict:
-    """Transfer crypto from FUND to UNIFIED and swap all to USDT"""
+    """Swap crypto to USDT (checks FUND, transfers to UNIFIED, then swaps)"""
     from main.bybit.account.balance import get_balance
     crypto = crypto.upper()
     fund_balance = get_balance(crypto, "FUND")
     if fund_balance <= 0:
         raise ValueError(f"No {crypto} balance in FUND account")
     print(f"📦 Found {fund_balance} {crypto} in FUND account")
-    transfer_to_unified(crypto)
-    unified_balance = get_balance(crypto, "UNIFIED")
-    if unified_balance <= 0:
-        raise ValueError(f"Transfer failed: No {crypto} balance in UNIFIED account")
-    print(f"💱 Swapping {unified_balance} {crypto} to USDT...")
-    return swap(crypto, "USDT", unified_balance, "in")
+    print(f"💱 Transferring to UNIFIED and swapping {fund_balance} {crypto} to USDT...")
+    return swap(crypto, "USDT", fund_balance, "in")
 
 def u_to_crypto(crypto: str, price: float) -> dict:
     """Use all USDT in UNIFIED to buy target crypto at specified price

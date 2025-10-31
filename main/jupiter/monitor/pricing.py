@@ -1,6 +1,6 @@
 """Jupiter pricing and quotes"""
 import requests
-from main.shared.data import get_token_info, bybit_symbol_to_mints, load_tokens
+from main.shared.data import get_token_info
 
 def get_quote(input_mint, output_mint, amount, slippage_bps=50):
     """Get swap quote from Jupiter"""
@@ -13,12 +13,10 @@ def get_quote(input_mint, output_mint, amount, slippage_bps=50):
         }, timeout=10)
         
         if response.status_code != 200:
-            print(f"⚠️ Jupiter API returned status {response.status_code}")
             return None
         data = response.json()
         return None if "error" in data else data
-    except requests.exceptions.RequestException as e:
-        print(f"⚠️ Jupiter API request failed: {e}")
+    except:
         return None
 
 def get_exchange_rate(input_symbol, output_symbol, amount):
@@ -42,23 +40,21 @@ def get_exchange_rate(input_symbol, output_symbol, amount):
     return (float(out_amt) / (10 ** output_decimals)) / (float(in_amt) / (10 ** input_decimals))
 
 def get_price_from_bybit_symbol(symbol, amount):
-    """Get Jupiter price using Bybit trading pair symbol"""
-    mints = bybit_symbol_to_mints(symbol)
-    if not mints:
+    """Get Jupiter price using Bybit trading pair symbol
+    Args:
+        symbol: Bybit symbol like 'SOLUSDT'
+        amount: Amount in USDT
+    Returns:
+        Price in USDT or None
+    """
+    # Extract base coin from symbol (e.g., 'SOL' from 'SOLUSDT')
+    if symbol.endswith("USDT"):
+        base_symbol = symbol[:-4]
+    elif symbol.endswith("USDC"):
+        base_symbol = symbol[:-4]
+    else:
         return None
-    base_mint, quote_mint = mints
-    tokens = load_tokens()
-    input_symbol = None
-    output_symbol = None
-    for sym, data in tokens.items():
-        if data and len(data) > 0:
-            mint = data[0].get("mint")
-            if mint == base_mint:
-                input_symbol = sym
-            if mint == quote_mint:
-                output_symbol = sym
-            if input_symbol and output_symbol:
-                break
-    if not input_symbol or not output_symbol:
-        return None
-    return get_exchange_rate(input_symbol, output_symbol, amount)
+    
+    # Get exchange rate: base -> USDT
+    rate = get_exchange_rate(base_symbol, "USDT", 1)
+    return rate

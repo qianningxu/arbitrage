@@ -8,7 +8,7 @@ def sign_request(param_str):
     """Create signature headers for Bybit API request"""
     api_key, api_secret = get_bybit_credentials()
     timestamp = str(int(time.time() * 1000))
-    recv_window = "5000"
+    recv_window = "20000"
     sign_str = f"{timestamp}{api_key}{recv_window}{param_str}"
     signature = hmac.new(api_secret.encode(), sign_str.encode(), hashlib.sha256).hexdigest()
     return {

@@ -30,7 +30,7 @@ def internal_transfer(coin, amount, from_account, to_account):
 
 def transfer_to_fund(coin=None, amount=None):
     """Transfer from UNIFIED to FUND"""
-    from main.bybit.account.balance import get_balance, get_all_unified_balances
+    from main.bybit.account.balance import get_balance, get_all_balances
     if coin:
         if amount is None:
             amount = get_balance(coin, "UNIFIED")
@@ -44,7 +44,7 @@ def transfer_to_fund(coin=None, amount=None):
             print(f"❌ Failed to transfer {coin}: {str(e)}")
             return [{"coin": coin, "amount": amount, "success": False, "error": str(e)}]
     else:
-        balances = get_all_unified_balances()
+        balances = get_all_balances("UNIFIED")
         if not balances:
             print("ℹ️  No funds in UNIFIED account")
             return []
@@ -61,7 +61,7 @@ def transfer_to_fund(coin=None, amount=None):
 
 def transfer_to_unified(coin=None, amount=None):
     """Transfer from FUND to UNIFIED"""
-    from main.bybit.account.balance import get_balance, get_all_fund_balances
+    from main.bybit.account.balance import get_balance, get_all_balances
     if coin:
         if amount is None:
             amount = get_balance(coin, "FUND")
@@ -75,7 +75,7 @@ def transfer_to_unified(coin=None, amount=None):
             print(f"❌ Failed to transfer {coin}: {str(e)}")
             return [{"coin": coin, "amount": amount, "success": False, "error": str(e)}]
     else:
-        balances = get_all_fund_balances()
+        balances = get_all_balances("FUND")
         if not balances:
             print("ℹ️  No funds in FUND account")
             return []
@@ -115,6 +115,20 @@ def get_deposit_address(coin, chain="SOL"):
             return chain_info["addressDeposit"]
     raise ValueError(f"No {chain} deposit address found for {coin}")
 
+def get_coin_info(coin):
+    """Get coin information including available chains"""
+    coin = coin.upper()
+    params = f"coin={coin}"
+    response = requests.get(
+        f"{BYBIT_API_BASE}/v5/asset/coin/query-info",
+        params={"coin": coin},
+        headers=sign_request(params)
+    )
+    data = response.json()
+    if data.get("retCode") != 0:
+        raise ValueError(f"Failed to get coin info: {data.get('retMsg')}")
+    return data["result"]
+
 def create_withdrawal(coin, amount, address, chain="SOL"):
     """Create withdrawal request"""
     coin = coin.upper()
@@ -132,7 +146,26 @@ def create_withdrawal(coin, amount, address, chain="SOL"):
     )
     data = response.json()
     if data.get("retCode") != 0:
-        raise ValueError(f"Withdrawal failed: {data.get('retMsg')}")
+        error_msg = data.get('retMsg')
+        if "chain or destination tag" in error_msg.lower():
+            try:
+                coin_info = get_coin_info(coin)
+                chains = coin_info.get("rows", [{}])[0].get("chains", [])
+                available_chains = [c.get("chain") for c in chains if c.get("chainWithdraw") == "1"]
+                print(f"\n❌ Withdrawal address not whitelisted!")
+                print(f"📝 To fix this:")
+                print(f"   1. Log into Bybit")
+                print(f"   2. Go to: Assets > Withdraw > Address Management")
+                print(f"   3. Add address: {address}")
+                print(f"   4. Select chain: {chain}")
+                print(f"   5. Available chains for {coin}: {', '.join(available_chains)}")
+                error_msg = f"Address {address} not whitelisted for {coin} on {chain} chain"
+            except Exception as e:
+                error_msg += f"\n⚠️  Could not fetch chain info: {str(e)}"
+        elif "wait at least" in error_msg.lower():
+            print(f"\n⏱️  Rate limit: {error_msg}")
+            error_msg = "Bybit rate limit - please wait before retrying"
+        raise ValueError(f"Withdrawal failed: {error_msg}")
     return data["result"]
 
 def withdraw(symbol, chain="SOL"):
