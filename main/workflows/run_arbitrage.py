@@ -54,7 +54,7 @@ def run_arbitrage(direction, skip_confirmation=False):
     if direction == 'B→J':
         final_balance = jupiter_check_balance("USDT")
     else:
-        final_balance = bybit_get_balance("USDT", "FUND")
+        final_balance = bybit_get_balance("USDT", "UNIFIED")
     
     result['final_balance'] = final_balance
     actual_profit = final_balance - initial_balance

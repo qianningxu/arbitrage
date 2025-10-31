@@ -1,0 +1,93 @@
+
+============================================================
+Testing run_arbitrage
+Direction: J→B
+============================================================
+
+
+💰 Initial Balance: $59.31
+
+Checking ACS... B=$0.000567 | J=$0.000559 | Slip=0.02% ✓ $0.74
+
+📈 预计收益: $0.74 (1.25%)
+
+🚀 Executing J→B arbitrage for ACS...
+
+📍 Step 1/3: Buy ACS on Jupiter
+💰 USDT 投入: 59.31
+📊 Jupiter 预期价格: $0.000559
+📊 预计购买数量: ~106099.991055 ACS
+💰 USDT balance: 59.309895
+🔄 Swapping USDT → ACS: 59.309895
+📊 Expected to receive: ~103886.256095 ACS
+✅ Jupiter swap: https://solscan.io/tx/5iwJjDUMo3Ci8Du8HXvtf2UgkQC3cNcKPtjSsyYEcJ4cqjKABxFVGGTCNnrCpW1Phk8xttkFxfoUy2VwHnrSynsv
+✅ Bought ACS on Jupiter
+📈 实际成交价: $0.000571
+📉 滑点损失: 2.131%
+⏳ Waiting for balance to update (need at least 51943.128048 ACS)...
+   Retrying... current balance: 0.0 ACS, target: 51943.128048 (10s elapsed)
+✅ Balance updated: 103874.208818 ACS (waited 20s)
+⏳ Waiting extra 10 seconds for security...
+
+📍 Step 2/3: Withdraw ACS from Jupiter to Bybit
+🔄 Starting withdrawal from Jupiter to Bybit for ACS...
+💰 Found 103874.208818 ACS in Jupiter wallet
+📍 Bybit deposit address: 4bfXHrYMbw1QPmamXT2XpHvd6zE4wJqFivzpLcraGaQb
+✅ Token transfer: https://solscan.io/tx/jPmbsGbrH9Pw9zUdLZmEXodsV4tcT4dNwpT7DeQWU9PQQNvKE2xQ6PiUpnnLmpzBJzufXhkB4oE7yjKZdPZV28j
+✅ Successfully withdrew 103874.208818 ACS to Bybit
+✅ Withdrawal sent to Bybit
+⏳ Waiting for ACS deposit to arrive on Bybit (need at least 51937.104409)...
+   Retrying... current balance: 0.0 ACS, target: 51937.104409 (10s elapsed)
+   Retrying... current balance: 0.0 ACS, target: 51937.104409 (20s elapsed)
+   Retrying... current balance: 0.0 ACS, target: 51937.104409 (30s elapsed)
+   Retrying... current balance: 0.0 ACS, target: 51937.104409 (40s elapsed)
+   Retrying... current balance: 0.0 ACS, target: 51937.104409 (50s elapsed)
+   Retrying... current balance: 0.0 ACS, target: 51937.104409 (60s elapsed)
+   Retrying... current balance: 0.0 ACS, target: 51937.104409 (70s elapsed)
+   Retrying... current balance: 0.0 ACS, target: 51937.104409 (80s elapsed)
+   Retrying... current balance: 0.0 ACS, target: 51937.104409 (90s elapsed)
+   Retrying... current balance: 0.0 ACS, target: 51937.104409 (100s elapsed)
+   Retrying... current balance: 0.0 ACS, target: 51937.104409 (110s elapsed)
+   Retrying... current balance: 0.0 ACS, target: 51937.104409 (120s elapsed)
+   Retrying... current balance: 0.0 ACS, target: 51937.104409 (130s elapsed)
+   Retrying... current balance: 0.0 ACS, target: 51937.104409 (140s elapsed)
+   Retrying... current balance: 0.0 ACS, target: 51937.104409 (150s elapsed)
+   Retrying... current balance: 0.0 ACS, target: 51937.104409 (160s elapsed)
+   Retrying... current balance: 0.0 ACS, target: 51937.104409 (170s elapsed)
+   Retrying... current balance: 0.0 ACS, target: 51937.104409 (180s elapsed)
+   Retrying... current balance: 0.0 ACS, target: 51937.104409 (190s elapsed)
+   Retrying... current balance: 0.0 ACS, target: 51937.104409 (200s elapsed)
+✅ Deposit confirmed: 103874.208818 ACS (waited 210s)
+⏳ Waiting extra 10 seconds for security...
+
+📍 Step 3/3: Sell ACS on Bybit
+💰 ACS 余额: 103874.539925
+📊 Bybit 预期价格: $0.000567 (滑点: 0.020%)
+📊 预计获得: ~58.92 USDT
+📦 Found 103874.208818 ACS in FUND account
+📦 Found 0.331107 ACS in UNIFIED account
+💱 Transferring to UNIFIED and swapping 103874.539925 ACS to USDT...
+📦 Transferring 1 coins from FUND to UNIFIED...
+✅ Sell 103874 ACS - Order ID: 2073276751689293568
+✅ Sold ACS on Bybit
+📈 实际成交价: $0.000567
+📈 实际获得: 58.86 USDT
+📈 价格差异: -0.100%
+
+🎉 Arbitrage execution completed successfully!
+
+==================================================
+💰 Balance After: $58.86
+📊 实际收益: $-0.45 (-0.76%)
+==================================================
+
+============================================================
+Test Complete:
+  Overall Success: True
+
+  Scan Result:
+    Coin Found: ACS
+
+  Execution Result:
+    Success: True
+============================================================

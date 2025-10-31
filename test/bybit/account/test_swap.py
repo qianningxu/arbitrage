@@ -63,7 +63,7 @@ if __name__ == "__main__":
     # test_crypto_to_u('SOL')  # Convert all SOL from FUND to USDT
     
     # Test with USDC (requires USDC balance in FUND account)
-    test_crypto_to_u('GMT')  # Sell all USDC from FUND → USDT
+    test_crypto_to_u('ACS')  # Sell all USDC from FUND → USDT
     
     # Test u_to_crypto: Buy crypto with USDT at specific price (IOC order)
     # test_u_to_crypto('SOL', 10)  # IOC at $10 (far below market), will be cancelled
