@@ -3,7 +3,7 @@ Simple demo test for bybit swap scenarios
 
 Scenario 1 (crypto_to_u): Jupiter → Bybit
 - Crypto arrives from Jupiter in FUND account
-- Function checks FUND balance, transfers to UNIFIED, then swaps to USDT
+- Function checks FUND and UNIFIED balance, transfers to UNIFIED if needed, then swaps to USDT
 
 Scenario 2 (u_to_crypto): Bybit Trading
 - All funds are USDT in UNIFIED (after Scenario 1)
@@ -17,11 +17,11 @@ from main.bybit.account.swap import crypto_to_u, u_to_crypto, place_limit_order
 
 
 def test_crypto_to_u(symbol):
-    """Test Scenario 1: Convert all crypto from FUND to USDT
+    """Test Scenario 1: Convert all crypto from FUND and UNIFIED to USDT
     
     After receiving crypto from Jupiter:
-    1. Checks balance in FUND account
-    2. Calls swap() which transfers FUND → UNIFIED and executes market order
+    1. Checks balance in both FUND and UNIFIED accounts
+    2. Calls swap() which transfers FUND → UNIFIED if needed and executes market order
     """
     result = crypto_to_u(symbol)
     print(f"✅ crypto_to_u completed - Order ID: {result['orderId']}")
@@ -63,7 +63,7 @@ if __name__ == "__main__":
     # test_crypto_to_u('SOL')  # Convert all SOL from FUND to USDT
     
     # Test with USDC (requires USDC balance in FUND account)
-    test_crypto_to_u('USDC')  # Sell all USDC from FUND → USDT
+    test_crypto_to_u('GMT')  # Sell all USDC from FUND → USDT
     
     # Test u_to_crypto: Buy crypto with USDT at specific price (IOC order)
     # test_u_to_crypto('SOL', 10)  # IOC at $10 (far below market), will be cancelled

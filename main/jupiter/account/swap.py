@@ -1,6 +1,7 @@
 """Jupiter trading and swaps"""
 import base64
 import requests
+import time
 from solders.transaction import VersionedTransaction
 from solana.rpc.commitment import Processed
 from solana.rpc.types import TxOpts
@@ -62,19 +63,27 @@ def swap(input_symbol, output_symbol, amount, slippage_bps=50):
     quote = get_quote(input_mint, output_mint, amount_lamports, slippage_bps)
     if not quote:
         raise ValueError("Failed to get quote from Jupiter")
+    expected_out = float(quote.get("outAmount", 0)) / (10 ** output_info["decimals"])
     print(f"🔄 Swapping {input_symbol} → {output_symbol}: {amount}")
-    return execute_swap(quote)
+    print(f"📊 Expected to receive: ~{expected_out:.6f} {output_symbol}")
+    tx_sig = execute_swap(quote)
+    return {"tx_sig": tx_sig, "expected_amount": expected_out}
 
 def crypto_to_u(crypto, slippage_bps=100000):
     """Swap all crypto balance to USDT"""
     balance = check_balance(crypto)
     if balance <= 0:
         raise ValueError(f"No {crypto} balance to swap")
+    
     print(f"💰 {crypto} balance: {balance}")
     return swap(crypto, "USDT", balance, slippage_bps)
 
 def u_to_crypto(crypto, slippage_bps=50):
-    """Swap all USDT to target crypto"""
+    """Swap all USDT to target crypto
+    
+    Returns:
+        dict with 'tx_sig' and 'expected_amount'
+    """
     balance = check_balance("USDT")
     if balance <= 0:
         raise ValueError("No USDT balance to swap")

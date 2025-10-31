@@ -18,5 +18,5 @@ def test_withdraw(symbol):
 
 
 if __name__ == "__main__":
-    test_withdraw('usdc')
+    test_withdraw('GMT')
 

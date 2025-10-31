@@ -11,6 +11,7 @@ from ..helper.client import get_client, get_keypair
 from .balance import get_sol_balance, get_token_balance
 from main.shared.data import get_token_info
 from main.bybit.account.transfers import get_deposit_address
+import time
 
 def send_sol(destination, amount):
     """Send native SOL to a destination"""
@@ -97,7 +98,6 @@ def withdraw(symbol, chain="SOL"):
     coin = symbol.upper()
     print(f"🔄 Starting withdrawal from Jupiter to Bybit for {coin}...")
     
-    # Get balance
     balance = get_token_balance(coin)
     if balance <= 0:
         print(f"❌ No {coin} available in Jupiter wallet")

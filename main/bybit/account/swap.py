@@ -1,6 +1,7 @@
 """Bybit spot trading"""
 import json
 import requests
+import time
 from main.shared.config import BYBIT_API_BASE
 from main.shared.data import get_pair_info
 from main.bybit.helper.auth import sign_request
@@ -120,15 +121,23 @@ def swap(in_coin: str, out_coin: str, amount: float, amount_unit: str = "in") ->
     return result
 
 def crypto_to_u(crypto: str) -> dict:
-    """Swap crypto to USDT (checks FUND, transfers to UNIFIED, then swaps)"""
+    """Swap crypto to USDT (checks FUND and UNIFIED, transfers to UNIFIED if needed, then swaps)"""
     from main.bybit.account.balance import get_balance
     crypto = crypto.upper()
+    
     fund_balance = get_balance(crypto, "FUND")
-    if fund_balance <= 0:
-        raise ValueError(f"No {crypto} balance in FUND account")
-    print(f"📦 Found {fund_balance} {crypto} in FUND account")
-    print(f"💱 Transferring to UNIFIED and swapping {fund_balance} {crypto} to USDT...")
-    return swap(crypto, "USDT", fund_balance, "in")
+    unified_balance = get_balance(crypto, "UNIFIED")
+    total_balance = fund_balance + unified_balance
+    
+    if total_balance <= 0:
+        raise ValueError(f"No {crypto} balance in FUND or UNIFIED account")
+    
+    if fund_balance > 0:
+        print(f"📦 Found {fund_balance} {crypto} in FUND account")
+    if unified_balance > 0:
+        print(f"📦 Found {unified_balance} {crypto} in UNIFIED account")
+    print(f"💱 {'Transferring to UNIFIED and swapping' if fund_balance > 0 else 'Swapping'} {total_balance} {crypto} to USDT...")
+    return swap(crypto, "USDT", total_balance, "in")
 
 def u_to_crypto(crypto: str, price: float) -> dict:
     """Use all USDT in UNIFIED to buy target crypto at specified price
@@ -136,6 +145,9 @@ def u_to_crypto(crypto: str, price: float) -> dict:
     Args:
         crypto: Target crypto symbol (e.g., SOL)
         price: Limit price for the order
+    
+    Returns:
+        dict with order result and 'expected_amount' field
     """
     from main.bybit.account.balance import get_balance
     crypto = crypto.upper()
@@ -160,10 +172,12 @@ def u_to_crypto(crypto: str, price: float) -> dict:
     
     print(f"💰 Found {usdt_balance} USDT in UNIFIED account")
     print(f"💱 Placing limit order: Buy {qty} {crypto} at {price} USDT (IOC)...")
+    print(f"📊 Expected to receive: ~{qty} {crypto}")
     result = place_limit_order(symbol, "Buy", qty, price, "IOC")
     if result.get("status") == "success":
         print(f"✅ Order placed - Order ID: {result['orderId']}")
     else:
         print(f"❌ Order failed: {result.get('retMsg')}")
+    result["expected_amount"] = qty
     return result
 

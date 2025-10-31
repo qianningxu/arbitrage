@@ -16,7 +16,7 @@ def test_execute_arbitrage(base_coin="SOL", direction="J→B"):
     print(f"Testing execute_arbitrage for {base_coin} [{direction}]")
     print(f"{'='*60}\n")
     
-    result = execute_arbitrage(base_coin, direction)
+    result = execute_arbitrage(base_coin, direction, skip_confirmation=True)
     
     print(f"\n{'='*60}")
     print(f"Test Result:")
@@ -24,9 +24,6 @@ def test_execute_arbitrage(base_coin="SOL", direction="J→B"):
     print(f"  Coin: {result['coin']}")
     print(f"  Direction: {result['direction']}")
     if result['success']:
-        print(f"  Initial Balance: ${result['initial_balance']:.2f}")
-        print(f"  Final Balance: ${result['final_balance']:.2f}")
-        print(f"  Actual Profit: ${result['actual_profit']:.2f}")
         print(f"  Steps Completed: {len(result['steps'])}")
     else:
         print(f"  Error: {result['error']}")
