@@ -26,5 +26,5 @@ def test_withdraw(symbol):
 
 
 if __name__ == "__main__":
-    test_withdraw('USDC')
+    test_withdraw('USDT')
 

@@ -49,9 +49,10 @@ def execute_arbitrage(base_coin, direction, skip_confirmation=False):
             print(f"✅ Bought {base_coin} on Bybit")
             
             print(f"⏳ Waiting for balance to update (need at least {expected_amount * 0.5:.6f} {base_coin})...")
-            max_wait = 30
+            max_wait = 600
             elapsed = 0
             target_balance = initial_bybit_balance + (expected_amount * 0.5)
+            balance_confirmed = False
             while elapsed < max_wait:
                 time.sleep(10)
                 elapsed += 10
@@ -60,8 +61,12 @@ def execute_arbitrage(base_coin, direction, skip_confirmation=False):
                     print(f"✅ Balance updated: {current_balance} {base_coin} (waited {elapsed}s)")
                     print(f"⏳ Waiting extra 10 seconds for security...")
                     time.sleep(10)
+                    balance_confirmed = True
                     break
                 print(f"   Retrying... current balance: {current_balance} {base_coin}, target: {target_balance:.6f} ({elapsed}s elapsed)")
+            
+            if not balance_confirmed:
+                raise ValueError(f"Timeout: Balance did not update after {max_wait}s. Current: {current_balance}, Target: {target_balance:.6f}")
             
             print(f"\n📍 Step 2/3: Withdraw {base_coin} from Bybit to Jupiter")
             bybit_withdrawal = bybit_withdraw(base_coin)
@@ -75,8 +80,9 @@ def execute_arbitrage(base_coin, direction, skip_confirmation=False):
                 print(f"⏳ Waiting for {base_coin} deposit to arrive on Jupiter (need at least {withdrawn_amount * 0.5:.6f})...")
                 initial_jupiter_balance = jupiter_check_balance(base_coin)
                 target_balance = initial_jupiter_balance + (withdrawn_amount * 0.5)
-                max_wait = 120
+                max_wait = 600
                 elapsed = 0
+                balance_confirmed = False
                 while elapsed < max_wait:
                     time.sleep(10)
                     elapsed += 10
@@ -85,8 +91,12 @@ def execute_arbitrage(base_coin, direction, skip_confirmation=False):
                         print(f"✅ Deposit confirmed: {current_balance} {base_coin} (waited {elapsed}s)")
                         print(f"⏳ Waiting extra 10 seconds for security...")
                         time.sleep(10)
+                        balance_confirmed = True
                         break
                     print(f"   Retrying... current balance: {current_balance} {base_coin}, target: {target_balance:.6f} ({elapsed}s elapsed)")
+                
+                if not balance_confirmed:
+                    raise ValueError(f"Timeout: Deposit did not arrive after {max_wait}s. Current: {current_balance}, Target: {target_balance:.6f}")
             
             print(f"\n📍 Step 3/3: Sell {base_coin} on Jupiter")
             jupiter_sell = jupiter_crypto_to_u(base_coin)
@@ -103,9 +113,10 @@ def execute_arbitrage(base_coin, direction, skip_confirmation=False):
             print(f"✅ Bought {base_coin} on Jupiter")
             
             print(f"⏳ Waiting for balance to update (need at least {expected_amount * 0.5:.6f} {base_coin})...")
-            max_wait = 60
+            max_wait = 600
             elapsed = 0
             target_balance = initial_jupiter_balance + (expected_amount * 0.5)
+            balance_confirmed = False
             while elapsed < max_wait:
                 time.sleep(10)
                 elapsed += 10
@@ -114,8 +125,12 @@ def execute_arbitrage(base_coin, direction, skip_confirmation=False):
                     print(f"✅ Balance updated: {current_balance} {base_coin} (waited {elapsed}s)")
                     print(f"⏳ Waiting extra 10 seconds for security...")
                     time.sleep(10)
+                    balance_confirmed = True
                     break
                 print(f"   Retrying... current balance: {current_balance} {base_coin}, target: {target_balance:.6f} ({elapsed}s elapsed)")
+            
+            if not balance_confirmed:
+                raise ValueError(f"Timeout: Balance did not update after {max_wait}s. Current: {current_balance}, Target: {target_balance:.6f}")
             
             print(f"\n📍 Step 2/3: Withdraw {base_coin} from Jupiter to Bybit")
             jupiter_withdrawal = jupiter_withdraw(base_coin)
@@ -129,8 +144,9 @@ def execute_arbitrage(base_coin, direction, skip_confirmation=False):
                 print(f"⏳ Waiting for {base_coin} deposit to arrive on Bybit (need at least {withdrawn_amount * 0.5:.6f})...")
                 initial_bybit_balance = bybit_get_balance(base_coin, "FUND")
                 target_balance = initial_bybit_balance + (withdrawn_amount * 0.5)
-                max_wait = 120
+                max_wait = 600
                 elapsed = 0
+                balance_confirmed = False
                 while elapsed < max_wait:
                     time.sleep(10)
                     elapsed += 10
@@ -139,8 +155,12 @@ def execute_arbitrage(base_coin, direction, skip_confirmation=False):
                         print(f"✅ Deposit confirmed: {current_balance} {base_coin} (waited {elapsed}s)")
                         print(f"⏳ Waiting extra 10 seconds for security...")
                         time.sleep(10)
+                        balance_confirmed = True
                         break
                     print(f"   Retrying... current balance: {current_balance} {base_coin}, target: {target_balance:.6f} ({elapsed}s elapsed)")
+                
+                if not balance_confirmed:
+                    raise ValueError(f"Timeout: Deposit did not arrive after {max_wait}s. Current: {current_balance}, Target: {target_balance:.6f}")
             
             print(f"\n📍 Step 3/3: Sell {base_coin} on Bybit")
             bybit_sell = bybit_crypto_to_u(base_coin)

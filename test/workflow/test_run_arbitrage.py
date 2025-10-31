@@ -39,5 +39,5 @@ def test_run_arbitrage(direction="J→B"):
     return result
 
 if __name__ == "__main__":
-    test_run_arbitrage("B→J")
+    test_run_arbitrage("J→B")
 
