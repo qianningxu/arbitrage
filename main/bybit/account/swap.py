@@ -101,7 +101,7 @@ def swap(in_coin: str, out_coin: str, amount: float, amount_unit: str = "in") ->
         if side == "Buy":
             qty = amount
         else:
-            avg_price = get_sell_rate(symbol, 0.01)
+            avg_price = get_sell_rate(symbol, 0.01)["rate"]
             qty = amount / avg_price
     
     # Only apply precision/minQty checks when not using quoteCoin market unit

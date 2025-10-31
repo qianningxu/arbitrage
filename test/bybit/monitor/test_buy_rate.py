@@ -7,8 +7,9 @@ from main.bybit.monitor.pricing import get_buy_rate
 
 def test_get_buy_rate(symbol, amount):
     """Get average buy price"""
-    rate = get_buy_rate(symbol, amount)
-    print(f"Buy {amount} {symbol.replace('USDT', '')} at: ${rate:.2f}")
+    result = get_buy_rate(symbol, amount)
+    print(f"Buy {amount} {symbol.replace('USDT', '')} at: ${result['rate']:.2f}")
+    print(f"Estimated buy slippage: {result['slippage']*100:.2f}%")
 
 if __name__ == "__main__":
     test_get_buy_rate("SOLUSDT", 1)

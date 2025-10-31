@@ -7,8 +7,9 @@ from main.bybit.monitor.pricing import get_sell_rate
 
 def test_get_sell_rate(symbol, amount):
     """Get average sell price"""
-    rate = get_sell_rate(symbol, amount)
-    print(f"Sell {amount} {symbol.replace('USDT', '')} at: ${rate:.2f}")
+    result = get_sell_rate(symbol, amount)
+    print(f"Sell {amount} {symbol.replace('USDT', '')} at: ${result['rate']:.2f}")
+    print(f"Estimated sell slippage: {result['slippage']*100:.2f}%")
 
 if __name__ == "__main__":
     test_get_sell_rate("SOLUSDT", 1)

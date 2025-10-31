@@ -26,7 +26,9 @@ def get_buy_rate(symbol, qty, depth=20):
         take = min(remaining, size)
         cost += take * price
         remaining -= take
-    return cost / (qty - remaining) if qty != remaining else 0
+    rate = cost / (qty - remaining) if qty != remaining else 0
+    slippage = estimate_buy_slippage(symbol, qty, depth)
+    return {"rate": rate, "slippage": slippage}
 
 def get_sell_rate(symbol, qty, depth=20):
     """Calculate average sell rate (selling into bids)"""
@@ -39,7 +41,24 @@ def get_sell_rate(symbol, qty, depth=20):
         take = min(remaining, size)
         proceeds += take * price
         remaining -= take
-    return proceeds / (qty - remaining) if qty != remaining else 0
+    rate = proceeds / (qty - remaining) if qty != remaining else 0
+    slippage = estimate_sell_slippage(symbol, qty, depth)
+    return {"rate": rate, "slippage": slippage}
+
+def estimate_buy_slippage(symbol, qty, depth=20):
+    """Estimate buy slippage using depth ratio method
+    s^A ≈ 0.01 × V/D_1%
+    where V = buy quantity, D_1% = ask depth within 1% of best ask
+    """
+    asks = get_orderbook(symbol, depth)["asks"]
+    if not asks:
+        return 0
+    best_ask = min(p for p, _ in asks)
+    threshold = best_ask * 1.01
+    depth_1pct = sum(size for price, size in asks if price <= threshold)
+    if depth_1pct == 0:
+        return 0
+    return 0.01 * (qty / depth_1pct)
 
 def estimate_sell_slippage(symbol, qty, depth=20):
     """Estimate sell slippage using depth ratio method
